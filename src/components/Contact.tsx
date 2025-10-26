@@ -15,33 +15,55 @@ const Contact = () => {
             <span className="text-primary font-bold">¡Hablemos!</span>
           </p>
 
+          <div className="space-y-4">
+            <p className="text-lg text-muted-foreground">CABA, Argentina</p>
+            <a 
+              href="mailto:julietaiorfida@gmail.com"
+              className="block text-xl font-semibold text-primary hover:underline"
+            >
+              julietaiorfida@gmail.com
+            </a>
+            <a 
+              href="tel:+5491127284692"
+              className="block text-lg text-foreground/80 hover:text-primary"
+            >
+              +54 11 2728-4692
+            </a>
+          </div>
+
           <Button
             size="lg"
-            className="rounded-full px-12 py-8 text-xl font-bold shadow-xl hover:scale-105 transition-transform"
+            asChild
+            className="rounded-full px-12 py-8 text-xl font-bold shadow-2xl hover:scale-105 transition-all hover:shadow-primary/50"
           >
-            <Mail className="mr-3 h-6 w-6" />
-            Enviar Mensaje
+            <a href="mailto:julietaiorfida@gmail.com">
+              <Mail className="mr-3 h-6 w-6" />
+              Enviar Mensaje
+            </a>
           </Button>
 
           <div className="flex justify-center gap-6 pt-8">
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full w-16 h-16 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary"
+              asChild
+              className="rounded-full w-16 h-16 border-2 shadow-lg hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-primary/50 transition-all"
             >
-              <Linkedin className="h-6 w-6" />
+              <a href="https://linkedin.com/in/julietaiorfida/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full w-16 h-16 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary"
+              className="rounded-full w-16 h-16 border-2 shadow-lg hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-primary/50 transition-all"
             >
               <Instagram className="h-6 w-6" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full w-16 h-16 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary"
+              className="rounded-full w-16 h-16 border-2 shadow-lg hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-primary/50 transition-all"
             >
               <Github className="h-6 w-6" />
             </Button>

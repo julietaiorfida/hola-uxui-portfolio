@@ -38,7 +38,7 @@ const Navigation = () => {
           <Button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className="rounded-full px-6 py-6 text-base font-bold shadow-lg hover:scale-105 transition-transform"
+            className="rounded-full px-8 py-7 text-lg font-bold shadow-2xl hover:scale-105 transition-all hover:shadow-primary/50"
           >
             {item.label}
           </Button>
@@ -53,7 +53,7 @@ const Navigation = () => {
               <Button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="rounded-full px-8 py-6 text-lg font-bold shadow-lg"
+                className="rounded-full px-10 py-7 text-xl font-bold shadow-2xl hover:shadow-primary/50"
               >
                 {item.label}
               </Button>

@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Redesign",
-      description: "Rediseño completo de plataforma e-commerce con enfoque en conversión y UX",
-      category: "UX/UI Design",
+      title: "Identidad Visual & Redes Sociales",
+      description: "Desarrollo de identidad visual de marca en redes sociales, definiendo estilo, paleta y tipografía para coherencia y reconocimiento",
+      category: "Branding & Social Media",
       color: "bg-primary",
     },
     {
-      title: "Mobile Banking App",
-      description: "Diseño de aplicación bancaria móvil con énfasis en seguridad y usabilidad",
-      category: "Mobile Design",
+      title: "Contenido Digital Creativo",
+      description: "Creación de contenido gráfico original (posteos, stories, reels) con Illustrator, Figma, Canva y Photoshop",
+      category: "Content Creation",
       color: "bg-accent",
     },
     {
-      title: "SaaS Dashboard",
-      description: "Sistema de diseño y dashboard para plataforma SaaS B2B",
-      category: "Product Design",
+      title: "Diseño UX/UI & Web",
+      description: "Diseño de interfaces y experiencias digitales con enfoque en usabilidad y diseño centrado en el usuario",
+      category: "UX/UI Design",
       color: "bg-secondary",
     },
   ];

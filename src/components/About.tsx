@@ -22,16 +22,18 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-foreground/80">
               <p>
-                Diseñadora UX/UI apasionada por crear experiencias digitales que conectan con las personas. 
-                Mi enfoque combina creatividad, investigación de usuarios y diseño centrado en el usuario.
+                Estudiante de Diseño de Multimedia e Interacción con experiencia en creación de contenido digital, 
+                diseño visual y gestión de redes sociales. Me apasiona conectar el diseño con la experiencia del 
+                usuario, creando piezas funcionales, creativas y alineadas a las tendencias actuales.
               </p>
               <p>
-                Me especializo en transformar ideas complejas en interfaces intuitivas y atractivas, 
-                siempre buscando el equilibrio perfecto entre estética y funcionalidad.
+                Trabajo con herramientas como Illustrator, Figma, Canva y Photoshop, y tengo conocimientos en UX/UI, 
+                branding, marketing digital y diseño web. Aprecio recibir feedback crítico y capacidad para aprender 
+                de forma constante.
               </p>
               <p>
-                Trabajo con herramientas como Figma, Adobe Creative Suite, y tengo experiencia en 
-                design systems, prototipado y user research.
+                Busco oportunidades para desarrollarme en equipos interdisciplinarios, donde pueda aportar diseño 
+                con propósito e impacto.
               </p>
             </div>
           </div>

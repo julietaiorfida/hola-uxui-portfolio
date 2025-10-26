@@ -7,11 +7,16 @@ const Hero = () => {
             <span className="block text-primary">Port</span>
             <span className="block text-primary-light -mt-12 md:-mt-20 lg:-mt-28">folio</span>
           </h1>
-          <div className="flex items-center justify-center md:justify-start gap-4 mt-8">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 mt-8">
             <div className="h-1 w-24 bg-primary rounded-full"></div>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light">
-              UX/UI Designer
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-2xl md:text-3xl font-bold text-foreground">
+                Maria Julieta Iorfida
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground font-light">
+                UX/UI Designer & Community Manager
+              </p>
+            </div>
           </div>
         </div>
       </div>
