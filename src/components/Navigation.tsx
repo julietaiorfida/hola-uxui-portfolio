@@ -32,8 +32,8 @@ const Navigation = () => {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </Button>
 
-      {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-col gap-2">
+      {/* Desktop Navigation - Horizontal Header */}
+      <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-row gap-2">
         {navItems.map((item) => (
           <Button
             key={item.id}

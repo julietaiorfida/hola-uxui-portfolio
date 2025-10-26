@@ -39,7 +39,7 @@ const Hero = () => {
 
           <h1 className="text-[6rem] md:text-[10rem] lg:text-[14rem] font-black leading-none handwriting animate-fade-in text-primary relative z-10">
             mi portfolio,<br />
-            <span className="text-accent">julieta</span>
+            <span className="text-accent">Julieta</span>
           </h1>
         </div>
       </div>
