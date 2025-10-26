@@ -64,6 +64,38 @@ const Experience = () => {
                 <p className="text-sm text-muted-foreground">Marzo 2008 - Diciembre 2023</p>
               </div>
             </div>
+
+            {/* Certifications */}
+            <div className="pt-8 mt-8 border-t border-border space-y-6">
+              <h3 className="text-2xl font-bold text-foreground mb-3">Certificaciones</h3>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary">Artificial Intelligence Fundamentals</p>
+                <p className="text-foreground/80">IBM</p>
+                <p className="text-sm text-muted-foreground">Octubre 2025</p>
+              </div>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary">First Certificate in English</p>
+                <p className="text-foreground/80">Cambridge International Education</p>
+                <p className="text-sm text-muted-foreground">Agosto 2023</p>
+              </div>
+            </div>
+
+            {/* Volunteering */}
+            <div className="pt-8 mt-8 border-t border-border">
+              <h3 className="text-2xl font-bold text-foreground mb-3">Voluntariado</h3>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary">Fundación Misión Marianista</p>
+                <p className="text-sm text-muted-foreground mb-2">Marzo 2022 - Actualidad</p>
+                <p className="text-foreground/80">
+                  Apoyo escolar en Colegio de Fátima, Villa Soldati. Acompañamiento académico 
+                  en matemática, lengua e inglés, generando espacios de confianza y fomentando 
+                  valores de compañerismo y empatía.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Skills */}
