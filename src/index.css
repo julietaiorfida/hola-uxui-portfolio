@@ -9,26 +9,28 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 25 100% 97%;
-    --foreground: 340 100% 25%;
+    --foreground: 340 80% 30%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 100% 25%;
+    --card-foreground: 340 80% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 340 100% 25%;
+    --popover-foreground: 340 80% 30%;
 
-    --primary: 340 100% 55%;
+    --primary: 340 85% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 340 100% 75%;
-    --primary-dark: 340 100% 40%;
+    --primary-light: 340 90% 75%;
+    --primary-dark: 340 90% 45%;
 
-    --secondary: 340 100% 85%;
-    --secondary-foreground: 340 100% 25%;
+    --secondary: 180 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 180 70% 70%;
+    --secondary-dark: 180 70% 35%;
 
-    --muted: 340 50% 95%;
+    --muted: 340 40% 95%;
     --muted-foreground: 340 30% 50%;
 
-    --accent: 340 100% 70%;
+    --accent: 180 65% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,12 +38,12 @@ All colors MUST be HSL.
 
     --border: 340 30% 90%;
     --input: 340 30% 90%;
-    --ring: 340 100% 55%;
+    --ring: 340 85% 60%;
 
     --radius: 1.5rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(340 100% 55%), hsl(340 100% 70%));
-    --gradient-soft: linear-gradient(180deg, hsl(25 100% 97%), hsl(340 100% 95%));
+    --gradient-primary: linear-gradient(135deg, hsl(340 85% 60%), hsl(180 65% 55%));
+    --gradient-soft: linear-gradient(180deg, hsl(25 100% 97%), hsl(340 90% 95%));
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -107,5 +109,42 @@ All colors MUST be HSL.
 
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .handwriting {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+  }
+
+  @keyframes tear {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(5px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(100px) rotate(5deg);
+      opacity: 0;
+    }
+  }
+
+  .animate-tear {
+    animation: tear 0.6s ease-out forwards;
+  }
+
+  @keyframes folder-pop {
+    0% {
+      transform: translateY(20px) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-folder-pop {
+    animation: folder-pop 0.5s ease-out forwards;
   }
 }
