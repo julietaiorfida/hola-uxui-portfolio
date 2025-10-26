@@ -1,4 +1,8 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const Experience = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   const experiences = [
     {
       role: "Diseñadora Digital y Community Manager",
@@ -21,8 +25,8 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-6 bg-muted/30">
-      <div className="max-w-7xl mx-auto">
+    <section id="experience" className="min-h-screen py-20 px-6 bg-muted/30" ref={ref}>
+      <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
           EXPERIENCE
         </h2>

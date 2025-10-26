@@ -1,9 +1,12 @@
 import { User } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const About = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="about" className="min-h-screen py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section id="about" className="min-h-screen py-20 px-6" ref={ref}>
+      <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo Placeholder */}
           <div className="relative">

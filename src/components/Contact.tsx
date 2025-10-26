@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="contact" className="min-h-screen py-20 px-6 flex items-center">
-      <div className="max-w-7xl mx-auto w-full">
+    <section id="contact" className="min-h-screen py-20 px-6 flex items-center" ref={ref}>
+      <div className={`max-w-7xl mx-auto w-full ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center">
           CONTACT
         </h2>

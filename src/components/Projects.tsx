@@ -1,7 +1,10 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Projects = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   const projects = [
     {
       title: "Identidad Visual & Redes Sociales",
@@ -21,10 +24,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left handwriting">
-          mis proyectos
+    <section id="projects" className="min-h-screen py-20 px-6" ref={ref}>
+      <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
+        <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
+          MIS PROYECTOS
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
