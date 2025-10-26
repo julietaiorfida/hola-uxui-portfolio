@@ -33,12 +33,13 @@ const Navigation = () => {
       </Button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-col gap-3">
+      <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-col gap-2">
         {navItems.map((item) => (
           <Button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className="rounded-full px-8 py-7 text-lg font-bold shadow-2xl hover:scale-105 transition-all hover:shadow-primary/50 opacity-20 hover:opacity-100"
+            size="sm"
+            className="rounded-full px-4 py-2 text-xs font-bold shadow-lg hover:scale-105 transition-all hover:shadow-primary/50 opacity-10 hover:opacity-100"
           >
             {item.label}
           </Button>
