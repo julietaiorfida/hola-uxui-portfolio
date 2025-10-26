@@ -47,6 +47,20 @@ const Experience = () => {
                   {exp.description}
                 </p>
               </div>)}
+            
+            {/* Education */}
+            <div className="relative pl-8 border-l-4 border-primary pt-8">
+              <div className="absolute -left-3 top-8 w-6 h-6 rounded-full bg-primary"></div>
+              <h3 className="text-2xl font-bold text-foreground mb-1">
+                Licenciatura en Diseño de Multimedia e Interacción
+              </h3>
+              <p className="text-lg text-primary font-semibold mb-2">
+                Universidad Argentina de la Empresa
+              </p>
+              <p className="text-sm text-muted-foreground mb-2">
+                Marzo 2024 - Diciembre 2028 (En curso)
+              </p>
+            </div>
           </div>
 
           {/* Skills */}
@@ -76,13 +90,6 @@ const Experience = () => {
                     {skill}
                   </span>)}
               </div>
-            </div>
-
-            <div className="pt-6 border-t border-border">
-              <h3 className="text-2xl font-bold text-foreground mb-3">Educación</h3>
-              <p className="text-lg font-semibold text-primary">Universidad Argentina de la Empresa</p>
-              <p className="text-foreground/80">Licenciatura en Diseño de Multimedia e Interacción</p>
-              <p className="text-sm text-muted-foreground">Marzo 2024 - Diciembre 2028 (En curso)</p>
             </div>
           </div>
         </div>
