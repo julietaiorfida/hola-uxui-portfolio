@@ -49,11 +49,20 @@ const Experience = () => {
               </div>)}
             
             {/* Education */}
-            <div className="pt-8 mt-8 border-t border-border">
+            <div className="pt-8 mt-8 border-t border-border space-y-6">
               <h3 className="text-2xl font-bold text-foreground mb-3">Educación</h3>
-              <p className="text-lg font-semibold text-primary">Universidad Argentina de la Empresa</p>
-              <p className="text-foreground/80">Licenciatura en Diseño de Multimedia e Interacción</p>
-              <p className="text-sm text-muted-foreground">Marzo 2024 - Diciembre 2028 (En curso)</p>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary">Universidad Argentina de la Empresa</p>
+                <p className="text-foreground/80">Licenciatura en Diseño de Multimedia e Interacción</p>
+                <p className="text-sm text-muted-foreground">Marzo 2024 - Diciembre 2028 (En curso)</p>
+              </div>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary">Colegio Marianista</p>
+                <p className="text-foreground/80">Bachillerato en Ciencias Sociales y Humanidades</p>
+                <p className="text-sm text-muted-foreground">Marzo 2008 - Diciembre 2023</p>
+              </div>
             </div>
           </div>
 
