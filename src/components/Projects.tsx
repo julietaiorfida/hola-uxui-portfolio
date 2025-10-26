@@ -1,6 +1,9 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import usersFirstStar from "@/assets/sticker-users-first-star.png";
+import designApp from "@/assets/sticker-design-app.png";
+import trust from "@/assets/sticker-trust.png";
 const Projects = () => {
   const {
     ref,
@@ -10,36 +13,49 @@ const Projects = () => {
     title: "Identidad Visual & Redes Sociales",
     description: "Desarrollo de identidad visual de marca en redes sociales, definiendo estilo, paleta y tipografía para coherencia y reconocimiento",
     category: "Branding & Social Media",
-    color: "bg-primary"
+    color: "bg-[hsl(340,85%,65%)]"
   }, {
     title: "Contenido Digital Creativo",
     description: "Creación de contenido gráfico original (posteos, stories, reels) con Illustrator, Figma, Canva y Photoshop",
     category: "Content Creation",
-    color: "bg-accent"
+    color: "bg-[hsl(65,85%,60%)]"
   }, {
     title: "Diseño UX/UI & Web",
     description: "Diseño de interfaces y experiencias digitales con enfoque en usabilidad y diseño centrado en el usuario",
     category: "UX/UI Design",
-    color: "bg-secondary"
+    color: "bg-[hsl(270,70%,60%)]"
   }, {
     title: "Marketing Digital",
     description: "Estrategias de contenido digital, planificación de campañas y gestión de presencia en redes sociales",
     category: "Marketing",
-    color: "bg-[hsl(280,70%,60%)]"
+    color: "bg-[hsl(25,90%,60%)]"
   }, {
     title: "Diseño de Interfaces Mobile",
     description: "Creación de experiencias móviles intuitivas, desde wireframes hasta prototipos interactivos de alta fidelidad",
     category: "Mobile Design",
-    color: "bg-[hsl(45,85%,55%)]"
+    color: "bg-[hsl(195,80%,50%)]"
   }, {
     title: "Branding & Logotipos",
     description: "Desarrollo de identidad de marca completa, incluyendo diseño de logotipos, paletas de color y guías de estilo",
     category: "Branding",
-    color: "bg-[hsl(160,65%,50%)]"
+    color: "bg-[hsl(160,70%,50%)]"
   }];
   return <section id="projects" className="min-h-screen py-20 px-6 bg-background relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
-      
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <img 
+          src={usersFirstStar} 
+          alt="Users First sticker" 
+          className={`absolute top-10 right-10 w-24 md:w-32 rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
+          style={{animationDelay: '0.2s'}}
+        />
+        <img 
+          src={trust} 
+          alt="Trust the process sticker" 
+          className={`absolute bottom-20 left-10 w-32 md:w-40 -rotate-6 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
+          style={{animationDelay: '0.4s'}}
+        />
+      </div>
       
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">

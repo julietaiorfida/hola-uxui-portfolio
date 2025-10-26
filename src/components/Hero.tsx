@@ -1,7 +1,7 @@
-import designTools from "@/assets/sticker-design-tools.png";
-import uxCollection from "@/assets/sticker-ux-collection.png";
-import smiley from "@/assets/sticker-smiley.png";
-import helpMe from "@/assets/sticker-help-me.png";
+import helpMe from "@/assets/sticker-help-me-new.png";
+import lorem from "@/assets/sticker-lorem.png";
+import ctrlZ from "@/assets/sticker-ctrl-z.png";
+import tools from "@/assets/sticker-tools.png";
 
 const Hero = () => {
   return (
@@ -11,30 +11,28 @@ const Hero = () => {
           {/* Stickers background */}
           <div className="absolute inset-0 pointer-events-none">
             <img 
-              src={designTools} 
-              alt="" 
-              className="absolute top-20 left-10 w-32 md:w-48 rotate-12 animate-fade-in opacity-70"
+              src={helpMe} 
+              alt="Help Me sticker" 
+              className="absolute top-20 left-10 w-40 md:w-56 rotate-12 animate-fade-in opacity-80"
             />
             <img 
-              src={uxCollection} 
-              alt="" 
-              className="absolute top-32 right-10 w-40 md:w-56 -rotate-6 animate-fade-in opacity-70"
+              src={tools} 
+              alt="Design tools sticker" 
+              className="absolute top-32 right-10 w-32 md:w-40 -rotate-6 animate-fade-in opacity-80"
               style={{animationDelay: '0.2s'}}
             />
             <img 
-              src={smiley} 
-              alt="" 
-              className="absolute bottom-32 left-16 w-24 md:w-32 rotate-45 animate-fade-in opacity-70"
+              src={ctrlZ} 
+              alt="Ctrl Z sticker" 
+              className="absolute bottom-32 left-16 w-28 md:w-36 rotate-45 animate-fade-in opacity-80"
               style={{animationDelay: '0.4s'}}
             />
             <img 
-              src={helpMe} 
-              alt="" 
-              className="absolute bottom-40 right-20 w-28 md:w-36 -rotate-12 animate-fade-in opacity-70"
+              src={lorem} 
+              alt="Lorem ipsum sticker" 
+              className="absolute bottom-40 right-20 w-36 md:w-48 -rotate-12 animate-fade-in opacity-80"
               style={{animationDelay: '0.3s'}}
             />
-            <div className="absolute top-1/2 left-1/4 text-6xl rotate-12 animate-fade-in opacity-50" style={{animationDelay: '0.5s'}}>✨</div>
-            <div className="absolute bottom-1/3 right-1/3 text-5xl -rotate-6 animate-fade-in opacity-50" style={{animationDelay: '0.6s'}}>🎨</div>
           </div>
 
           <h1 className="text-[6rem] md:text-[10rem] lg:text-[14rem] font-black leading-none handwriting animate-fade-in text-primary relative z-10">

@@ -1,5 +1,7 @@
 import { User } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import usersFirstHeart from "@/assets/sticker-users-first-heart.png";
+import designApp from "@/assets/sticker-design-app.png";
 const About = () => {
   const {
     ref,
@@ -7,10 +9,19 @@ const About = () => {
   } = useScrollAnimation();
   return <section id="about" className="min-h-screen py-20 px-6 bg-muted/20 relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
-      <div className={`absolute top-20 right-10 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{
-      animationDelay: '0.3s'
-    }}>
-        🎯
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <img 
+          src={usersFirstHeart} 
+          alt="Users First sticker" 
+          className={`absolute top-20 right-10 w-28 md:w-36 rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
+          style={{animationDelay: '0.3s'}}
+        />
+        <img 
+          src={designApp} 
+          alt="Design App sticker" 
+          className={`absolute bottom-32 right-20 w-32 md:w-40 -rotate-6 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
+          style={{animationDelay: '0.5s'}}
+        />
       </div>
       
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
