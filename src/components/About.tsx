@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import julietaPhoto from "@/assets/julieta-sin-fondo.png";
 import characterPhoto from "@/assets/character-julieta-final.png";
+import characterPhoto2 from "@/assets/character-julieta.png";
 const About = () => {
   const {
     ref,
@@ -35,6 +36,15 @@ const About = () => {
                       src={characterPhoto} 
                       alt="Character Julieta" 
                       className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={characterPhoto2} 
+                      alt="Character Julieta 2" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-primary/20 to-secondary"
                     />
                   </div>
                 </CarouselItem>
