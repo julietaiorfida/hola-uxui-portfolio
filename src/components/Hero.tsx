@@ -14,7 +14,7 @@ const Hero = () => {
                 Maria Julieta Iorfida
               </p>
               <p className="text-lg md:text-xl text-muted-foreground font-light">
-                UX/UI Designer & Community Manager
+                Diseñadora UX/UI
               </p>
             </div>
           </div>
