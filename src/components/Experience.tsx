@@ -29,7 +29,7 @@ const Experience = () => {
           EXPERIENCE
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-[1fr_1.2fr] gap-12">
           {/* Timeline */}
           <div className="space-y-8">
             {experiences.map((exp, index) => <div key={index} className="relative pl-8 border-l-4 border-primary">

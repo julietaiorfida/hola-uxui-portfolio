@@ -1,8 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import usersFirstStar from "@/assets/sticker-users-first-star-original.png";
-import trust from "@/assets/sticker-trust-original.png";
 const Projects = () => {
   const {
     ref,
@@ -40,22 +38,6 @@ const Projects = () => {
     color: "bg-[hsl(160,70%,50%)]"
   }];
   return <section id="projects" className="min-h-screen py-20 px-6 bg-background relative overflow-hidden" ref={ref}>
-      {/* Decorative stickers */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <img 
-          src={usersFirstStar} 
-          alt="Users First sticker" 
-          className={`absolute top-10 right-10 w-24 md:w-32 rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
-          style={{animationDelay: '0.2s'}}
-        />
-        <img 
-          src={trust} 
-          alt="Trust the process sticker" 
-          className={`absolute bottom-20 left-10 w-32 md:w-40 -rotate-6 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
-          style={{animationDelay: '0.4s'}}
-        />
-      </div>
-      
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
           MIS PROYECTOS

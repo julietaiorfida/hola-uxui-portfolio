@@ -1,38 +1,47 @@
-import { User } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import usersFirstHeart from "@/assets/sticker-users-first-heart-original.png";
-import designApp from "@/assets/sticker-design-app-original.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import julietaPhoto from "@/assets/julieta-sin-fondo.png";
+import characterPhoto from "@/assets/character-julieta-final.png";
 const About = () => {
   const {
     ref,
     isVisible
   } = useScrollAnimation();
   return <section id="about" className="min-h-screen py-20 px-6 bg-muted/20 relative overflow-hidden" ref={ref}>
-      {/* Decorative stickers */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <img 
-          src={usersFirstHeart} 
-          alt="Users First sticker" 
-          className={`absolute top-20 right-10 w-28 md:w-36 rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
-          style={{animationDelay: '0.3s'}}
-        />
-        <img 
-          src={designApp} 
-          alt="Design App sticker" 
-          className={`absolute bottom-32 right-20 w-32 md:w-40 -rotate-6 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}
-          style={{animationDelay: '0.5s'}}
-        />
-      </div>
-      
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Photo Placeholder */}
+          {/* Photo Carousel */}
           <div className="relative">
-            <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-accent/30">
-                <User className="w-32 h-32 text-primary/30" />
-              </div>
-            </div>
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaPhoto} 
+                      alt="Julieta" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={characterPhoto} 
+                      alt="Character Julieta" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-primary shadow-xl animate-float"></div>
           </div>
 

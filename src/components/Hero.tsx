@@ -2,14 +2,14 @@ import character from "@/assets/julieta-sin-fondo.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden bg-background">
+    <section className="min-h-screen flex items-center justify-center px-8 py-24 md:px-12 md:py-32 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Text */}
           <div className="relative">
-            <h1 className="text-[4rem] md:text-[6rem] lg:text-[8rem] font-black leading-none handwriting animate-fade-in text-primary relative z-10">
+            <h1 className="text-[4rem] md:text-[6rem] lg:text-[9rem] font-black leading-none handwriting animate-fade-in text-primary relative z-10">
               mi portfolio,<br />
-              <span className="text-accent">Julieta</span>
+              <span className="text-accent text-[4.5rem] md:text-[7rem] lg:text-[10rem]">Julieta</span>
             </h1>
           </div>
 
