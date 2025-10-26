@@ -6,7 +6,14 @@ const Contact = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="contact" className="min-h-screen py-20 px-6 flex items-center" ref={ref}>
+    <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-background relative overflow-hidden" ref={ref}>
+      {/* Decorative stickers */}
+      <div className={`absolute top-20 left-10 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.4s'}}>
+        💌
+      </div>
+      <div className={`absolute bottom-20 right-10 text-5xl -rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.6s'}}>
+        📧
+      </div>
       <div className={`max-w-7xl mx-auto w-full ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center">
           CONTACT

@@ -25,7 +25,14 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-6 bg-muted/30" ref={ref}>
+    <section id="experience" className="min-h-screen py-20 px-6 bg-muted/20 relative overflow-hidden" ref={ref}>
+      {/* Decorative stickers */}
+      <div className={`absolute top-16 right-16 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.5s'}}>
+        🚀
+      </div>
+      <div className={`absolute bottom-16 left-16 text-5xl -rotate-6 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.7s'}}>
+        ⭐
+      </div>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
           EXPERIENCE

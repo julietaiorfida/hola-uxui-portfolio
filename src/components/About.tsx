@@ -5,7 +5,14 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="about" className="min-h-screen py-20 px-6" ref={ref}>
+    <section id="about" className="min-h-screen py-20 px-6 bg-muted/20 relative overflow-hidden" ref={ref}>
+      {/* Decorative stickers */}
+      <div className={`absolute top-20 right-10 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.3s'}}>
+        🎯
+      </div>
+      <div className={`absolute bottom-20 left-10 text-5xl -rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.5s'}}>
+        💡
+      </div>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo Placeholder */}
