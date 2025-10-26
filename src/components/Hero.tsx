@@ -1,4 +1,4 @@
-import character from "@/assets/character-julieta-final.png";
+import character from "@/assets/julieta-sin-fondo.png";
 
 const Hero = () => {
   return (
