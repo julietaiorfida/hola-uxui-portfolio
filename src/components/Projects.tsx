@@ -1,9 +1,8 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import usersFirstStar from "@/assets/sticker-users-first-star.png";
-import designApp from "@/assets/sticker-design-app.png";
-import trust from "@/assets/sticker-trust.png";
+import usersFirstStar from "@/assets/sticker-users-first-star-original.png";
+import trust from "@/assets/sticker-trust-original.png";
 const Projects = () => {
   const {
     ref,

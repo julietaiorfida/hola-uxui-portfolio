@@ -1,7 +1,7 @@
 import { User } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import usersFirstHeart from "@/assets/sticker-users-first-heart.png";
-import designApp from "@/assets/sticker-design-app.png";
+import usersFirstHeart from "@/assets/sticker-users-first-heart-original.png";
+import designApp from "@/assets/sticker-design-app-original.png";
 const About = () => {
   const {
     ref,
