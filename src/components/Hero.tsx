@@ -8,7 +8,7 @@ const Hero = () => {
           {/* Left Column - Text */}
           <div className="relative">
             <h1 className="text-[4rem] md:text-[6rem] lg:text-[9rem] font-black leading-none handwriting animate-fade-in text-primary relative z-10">
-              mi portfolio,<br />
+              Mi portfolio,<br />
               <span className="text-accent text-[4.5rem] md:text-[7rem] lg:text-[10rem]">Julieta</span>
             </h1>
           </div>

@@ -37,14 +37,16 @@ const Projects = () => {
     category: "Branding",
     color: "bg-[hsl(160,70%,50%)]"
   }];
-  return <section id="projects" className="min-h-screen py-20 px-6 bg-secondary/20 relative overflow-hidden" ref={ref}>
+  return <section id="projects" className="min-h-screen py-20 px-6 bg-secondary/40 relative overflow-hidden" ref={ref}>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
-          MIS PROYECTOS
+          MIS PROYECTOS DESTACADOS
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => <div key={index} className={`${project.color} text-white rounded-3xl p-8 shadow-2xl hover:shadow-xl transition-all hover:scale-105 flex flex-col`}>
+          {projects.map((project, index) => <div key={index} className={`${project.color} text-white rounded-3xl p-8 shadow-2xl hover:shadow-xl transition-all hover:scale-105 flex flex-col animate-fade-in`} style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
               <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold text-white mb-4">
                 {project.category}
               </span>

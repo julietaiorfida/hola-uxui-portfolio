@@ -6,7 +6,7 @@ const Contact = () => {
     ref,
     isVisible
   } = useScrollAnimation();
-  return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-muted/30 relative overflow-hidden" ref={ref}>
+  return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-muted/50 relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
       <div className={`absolute top-20 left-10 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{
       animationDelay: '0.4s'
