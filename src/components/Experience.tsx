@@ -3,7 +3,11 @@ import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.svg";
 import photoshopLogo from "@/assets/tools/photoshop.svg";
 import canvaLogo from "@/assets/tools/canva.svg";
-import { Film, Video, Code, FileCode } from "lucide-react";
+import afterEffectsLogo from "@/assets/tools/after-effects.png";
+import capcutLogo from "@/assets/tools/capcut.png";
+import javascriptLogo from "@/assets/tools/javascript.png";
+import htmlLogo from "@/assets/tools/html.png";
+import cssLogo from "@/assets/tools/css.png";
 const Experience = () => {
   const {
     ref,
@@ -127,19 +131,19 @@ const Experience = () => {
                   <img src={canvaLogo} alt="Canva" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <Film className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <img src={afterEffectsLogo} alt="After Effects" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <Video className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <img src={capcutLogo} alt="CapCut" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <Code className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <img src={javascriptLogo} alt="JavaScript" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <FileCode className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <img src={htmlLogo} alt="HTML" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <div className="text-primary font-bold text-2xl">CSS</div>
+                  <img src={cssLogo} alt="CSS" className="w-16 h-16" />
                 </div>
               </div>
             </div>
