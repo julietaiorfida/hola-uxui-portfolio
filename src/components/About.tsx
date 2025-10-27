@@ -93,7 +93,7 @@ const About = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-            <img src={usersFirstSticker} alt="Users First" className="absolute -bottom-6 -right-6 w-32 h-32 object-contain animate-float drop-shadow-xl" />
+            <img src={usersFirstSticker} alt="Users First" className="absolute -bottom-6 -right-6 w-40 h-40 animate-float" />
           </div>
 
           {/* Content */}
