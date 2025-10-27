@@ -20,7 +20,7 @@ const Experience = () => {
     period: "Marzo 2024 - Actualidad",
     description: "Diseño de clases personalizadas y desarrollo de materiales interactivos para distintos niveles"
   }];
-  return <section id="experience" className="min-h-screen py-20 px-6 bg-muted/20 relative overflow-hidden" ref={ref}>
+  return <section id="experience" className="min-h-screen py-20 px-6 bg-background relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
       
       
