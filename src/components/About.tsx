@@ -7,14 +7,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import julietaPhoto from "@/assets/julieta-sin-fondo.png";
-import characterPhoto from "@/assets/character-julieta-final.png";
+import characterPhoto from "@/assets/character-julieta-final-no-bg.png";
 import characterPhoto2 from "@/assets/character-julieta.png";
 const About = () => {
   const {
     ref,
     isVisible
   } = useScrollAnimation();
-  return <section id="about" className="min-h-screen py-20 px-6 bg-muted/50 relative overflow-hidden" ref={ref}>
+  return <section id="about" className="min-h-screen py-20 px-6 bg-gradient-to-br from-secondary/30 to-accent/20 relative overflow-hidden" ref={ref}>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo Carousel */}

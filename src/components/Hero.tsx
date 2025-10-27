@@ -2,7 +2,7 @@ import character from "@/assets/julieta-sin-fondo.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-8 py-24 md:px-12 md:py-32 relative overflow-hidden bg-background">
+    <section className="min-h-screen flex items-center justify-center px-8 py-24 md:px-12 md:py-32 relative overflow-hidden bg-gradient-to-br from-background to-primary/5">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Text */}

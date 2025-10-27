@@ -37,7 +37,7 @@ const Projects = () => {
     category: "Branding",
     color: "bg-[hsl(160,70%,50%)]"
   }];
-  return <section id="projects" className="min-h-screen py-20 px-6 bg-secondary/40 relative overflow-hidden" ref={ref}>
+  return <section id="projects" className="min-h-screen py-20 px-6 bg-background relative overflow-hidden" ref={ref}>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
           MIS PROYECTOS DESTACADOS
