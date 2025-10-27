@@ -1,7 +1,7 @@
 import heroImage from "@/assets/julieta-hero-main.png";
 
 const Hero = () => {
-  return <section className="min-h-screen flex items-center relative overflow-hidden bg-background">
+  return <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-background to-primary/5">
       <div className="w-full h-full flex items-center">
         <div className="flex items-center justify-between w-full">
           {/* Left Column - Text */}
