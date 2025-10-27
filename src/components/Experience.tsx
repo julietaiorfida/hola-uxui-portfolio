@@ -160,7 +160,7 @@ const Experience = () => {
                 </div>
                 
                 <div>
-                  <p className="text-lg font-semibold text-accent mb-1">Primer Certificado en Inglés</p>
+                  <p className="text-lg font-semibold text-accent mb-1">First Certificate in English B1</p>
                   <p className="text-foreground/80 mb-1">Educación Internacional de Cambridge</p>
                   <p className="text-sm text-muted-foreground">Agosto 2023</p>
                 </div>
