@@ -5,10 +5,10 @@ const Hero = () => {
       <div className="w-full h-full flex items-center">
         <div className="flex items-center justify-between w-full">
           {/* Left Column - Text */}
-          <div className="relative z-10 pl-8 md:pl-16 lg:pl-24">
-            <h1 className="text-[4rem] lg:text-[9rem] font-black leading-none handwriting animate-fade-in text-primary md:text-8xl">
+          <div className="relative z-10 pl-12 md:pl-20 lg:pl-32 flex-1 flex items-center justify-center">
+            <h1 className="text-[5rem] lg:text-[11rem] font-black leading-none handwriting animate-fade-in text-primary md:text-9xl">
               Mi portfolio,<br />
-              <span className="text-accent text-[4.5rem] lg:text-[10rem] md:text-9xl">Julieta</span>
+              <span className="text-accent text-[5.5rem] lg:text-[12rem] md:text-[10rem]">Julieta</span>
             </h1>
           </div>
 
