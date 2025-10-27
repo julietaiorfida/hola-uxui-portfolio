@@ -8,11 +8,7 @@ const Contact = () => {
   } = useScrollAnimation();
   return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-br from-background to-accent/10 relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
-      <div className={`absolute top-20 left-10 text-6xl rotate-12 ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`} style={{
-      animationDelay: '0.4s'
-    }}>
-        💌
-      </div>
+      
       
       <div className={`max-w-7xl mx-auto w-full ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center">
