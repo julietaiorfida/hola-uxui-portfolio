@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import julietaPhoto from "@/assets/julieta-sin-fondo.png";
-import characterPhoto from "@/assets/character-julieta-waving.png";
+import characterPhoto from "@/assets/character-julieta-final-no-bg.png";
 const About = () => {
   const {
     ref,
