@@ -13,6 +13,7 @@ import julietaPhone from "@/assets/julieta-phone.png";
 import julietaDrawing from "@/assets/julieta-drawing.png";
 import julietaLaptop from "@/assets/julieta-laptop.png";
 import julietaTeam from "@/assets/julieta-team.png";
+import usersFirstSticker from "@/assets/sticker-users-first-star-original.png";
 const About = () => {
   const {
     ref,
@@ -92,7 +93,7 @@ const About = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-primary shadow-xl animate-float"></div>
+            <img src={usersFirstSticker} alt="Users First" className="absolute -bottom-6 -right-6 w-32 h-32 object-contain animate-float drop-shadow-xl" />
           </div>
 
           {/* Content */}
