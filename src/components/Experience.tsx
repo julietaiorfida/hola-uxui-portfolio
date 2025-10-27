@@ -1,7 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import figmaLogo from "@/assets/tools/figma.svg";
-import illustratorLogo from "@/assets/tools/illustrator.svg";
-import photoshopLogo from "@/assets/tools/photoshop.svg";
+import illustratorLogo from "@/assets/tools/illustrator.png";
+import photoshopLogo from "@/assets/tools/photoshop.png";
 import canvaLogo from "@/assets/tools/canva.svg";
 import afterEffectsLogo from "@/assets/tools/after-effects.png";
 import capcutLogo from "@/assets/tools/capcut.png";
