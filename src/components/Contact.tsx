@@ -6,7 +6,7 @@ const Contact = () => {
     ref,
     isVisible
   } = useScrollAnimation();
-  return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-br from-background to-accent/10 relative overflow-hidden" ref={ref}>
+  return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden" ref={ref}>
       {/* Decorative stickers */}
       
       
