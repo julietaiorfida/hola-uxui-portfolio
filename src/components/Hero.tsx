@@ -1,4 +1,4 @@
-import heroImage from "@/assets/character-julieta-final-no-bg.png";
+import heroImage from "@/assets/julieta-hero-main.png";
 
 const Hero = () => {
   return <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-background to-primary/5">
