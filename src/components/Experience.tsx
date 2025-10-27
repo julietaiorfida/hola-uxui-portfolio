@@ -3,7 +3,7 @@ import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.svg";
 import photoshopLogo from "@/assets/tools/photoshop.svg";
 import canvaLogo from "@/assets/tools/canva.svg";
-import { Palette, FileText } from "lucide-react";
+import { Film, Video, Code, FileCode } from "lucide-react";
 const Experience = () => {
   const {
     ref,
@@ -127,10 +127,19 @@ const Experience = () => {
                   <img src={canvaLogo} alt="Canva" className="w-16 h-16" />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <Palette className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <Film className="w-16 h-16 text-primary" strokeWidth={1.5} />
                 </div>
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
-                  <FileText className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                  <Video className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                </div>
+                <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
+                  <Code className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                </div>
+                <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
+                  <FileCode className="w-16 h-16 text-primary" strokeWidth={1.5} />
+                </div>
+                <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
+                  <div className="text-primary font-bold text-2xl">CSS</div>
                 </div>
               </div>
             </div>
