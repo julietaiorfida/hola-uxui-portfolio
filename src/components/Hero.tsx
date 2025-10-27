@@ -13,7 +13,7 @@ const Hero = () => {
 
           {/* Right Column - Character */}
           <div className="relative flex justify-center lg:justify-end">
-            <img src={character} alt="Julieta" className="w-64 md:w-80 lg:w-[28rem] animate-fade-in" style={{
+            <img src={character} alt="Julieta" className="w-80 md:w-96 lg:w-[36rem] animate-fade-in" style={{
             animationDelay: '0.1s'
           }} />
           </div>
