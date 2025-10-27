@@ -25,23 +25,89 @@ const Experience = () => {
         </h2>
 
         <div className="grid md:grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
-          {/* Timeline */}
-          <div className="space-y-8">
-            {experiences.map((exp, index) => <div key={index} className="relative pl-8 border-l-4 border-primary">
-                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary"></div>
-                <h3 className="text-2xl font-bold text-foreground mb-1">
-                  {exp.role}
-                </h3>
-                <p className="text-lg text-primary font-semibold mb-2">
-                  {exp.company}
-                </p>
-                <p className="text-sm text-muted-foreground mb-2">
-                  {exp.period}
-                </p>
-                <p className="text-foreground/80">
-                  {exp.description}
-                </p>
-              </div>)}
+          {/* Left Column: Timeline and Skills */}
+          <div className="space-y-12">
+            {/* Timeline */}
+            <div className="space-y-8">
+              {experiences.map((exp, index) => <div key={index} className="relative pl-8 border-l-4 border-primary">
+                  <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary"></div>
+                  <h3 className="text-2xl font-bold text-foreground mb-1">
+                    {exp.role}
+                  </h3>
+                  <p className="text-lg text-primary font-semibold mb-2">
+                    {exp.company}
+                  </p>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {exp.period}
+                  </p>
+                  <p className="text-foreground/80">
+                    {exp.description}
+                  </p>
+                </div>)}
+            </div>
+
+            {/* Key Strengths */}
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+              <h3 className="text-3xl font-bold text-primary mb-6">Key Strengths</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Atención al detalle y enfoque en la experiencia del usuario</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Capacidad de aprendizaje constante y adaptación</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Trabajo colaborativo en equipos interdisciplinarios</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Gestión de proyectos y cumplimiento de plazos</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tools */}
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+              <h3 className="text-3xl font-bold text-primary mb-6">Tools</h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">Figma</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">Illustrator</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">Photoshop</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">Canva</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">Procreate</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full font-semibold">InDesign</span>
+              </div>
+            </div>
+
+            {/* Skills */}
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+              <h3 className="text-3xl font-bold text-primary mb-6">Skills</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Diseño UX/UI</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Branding y diseño de identidad visual</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Marketing digital y gestión de redes sociales</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Diseño web responsive</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <p className="text-foreground/80">Creación de contenido visual</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Skills */}
