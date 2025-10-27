@@ -8,6 +8,11 @@ import {
 } from "@/components/ui/carousel";
 import julietaPhoto from "@/assets/julieta-sin-fondo.png";
 import characterPhoto from "@/assets/character-julieta-final-no-bg.png";
+import julietaThumbsUp from "@/assets/julieta-thumbs-up.png";
+import julietaPhone from "@/assets/julieta-phone.png";
+import julietaDrawing from "@/assets/julieta-drawing.png";
+import julietaLaptop from "@/assets/julieta-laptop.png";
+import julietaTeam from "@/assets/julieta-team.png";
 const About = () => {
   const {
     ref,
@@ -34,6 +39,51 @@ const About = () => {
                     <img 
                       src={characterPhoto} 
                       alt="Character Julieta" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaThumbsUp} 
+                      alt="Julieta con actitud positiva" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaPhone} 
+                      alt="Julieta en llamada" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaDrawing} 
+                      alt="Julieta diseñando" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaLaptop} 
+                      alt="Julieta trabajando" 
+                      className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-secondary shadow-2xl">
+                    <img 
+                      src={julietaTeam} 
+                      alt="Julieta colaborando" 
                       className="w-full h-full object-contain bg-gradient-to-br from-secondary to-accent/30"
                     />
                   </div>
