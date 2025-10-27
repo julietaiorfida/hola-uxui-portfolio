@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import stickerDesignApp from "@/assets/sticker-design-app-original.png";
 const Contact = () => {
   const {
     ref,
     isVisible
   } = useScrollAnimation();
   return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden" ref={ref}>
-      {/* Decorative sticker */}
-      <img src={stickerDesignApp} alt="" className="absolute top-32 left-24 w-24 h-24 opacity-70 rotate-12 animate-float" style={{ animationDelay: '0.4s' }} />
       {/* Decorative stickers */}
       
       
