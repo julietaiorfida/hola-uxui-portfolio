@@ -30,7 +30,7 @@ const Experience = () => {
         </h2>
 
         <div className="grid md:grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
-          {/* Left Column: Timeline and Skills */}
+          {/* Left Column: Timeline, Skills, and Tools */}
           <div className="space-y-12">
             {/* Timeline */}
             <div className="space-y-8">
@@ -53,36 +53,62 @@ const Experience = () => {
               </div>)}
             </div>
 
-            {/* Skills */}
-            <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Skills</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Diseño UX/UI</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Branding y diseño de identidad visual</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Marketing digital y gestión de redes sociales</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Diseño web responsive</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Creación de contenido visual</span>
-                </li>
-              </ul>
+            {/* Skills and Key Strengths Grid */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Skills */}
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-4">Habilidades</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Diseño UX/UI</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Branding y diseño de identidad visual</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Marketing digital y gestión de redes sociales</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Diseño web responsive</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Creación de contenido visual</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Key Strengths */}
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-4">Puntos Fuertes Claves</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Atención al detalle y enfoque en la experiencia del usuario</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Capacidad de aprendizaje constante y adaptación</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Trabajo colaborativo en equipos interdisciplinarios</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Gestión de proyectos y cumplimiento de plazos</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Tools */}
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Tools</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">Herramientas</h3>
               <div className="grid grid-cols-3 gap-4">
                 <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform">
                   <img src={figmaLogo} alt="Figma" className="w-16 h-16" />
@@ -103,29 +129,6 @@ const Experience = () => {
                   <FileText className="w-16 h-16 text-primary" strokeWidth={1.5} />
                 </div>
               </div>
-            </div>
-
-            {/* Key Strengths */}
-            <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Key Strengths</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Atención al detalle y enfoque en la experiencia del usuario</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Capacidad de aprendizaje constante y adaptación</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Trabajo colaborativo en equipos interdisciplinarios</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-foreground/80">Gestión de proyectos y cumplimiento de plazos</span>
-                </li>
-              </ul>
             </div>
           </div>
 
