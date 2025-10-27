@@ -1,6 +1,11 @@
 import heroImage from "@/assets/julieta-hero-main.png";
+import stickerTools from "@/assets/sticker-tools-original.png";
+import stickerCtrlZ from "@/assets/sticker-ctrl-z-original.png";
 const Hero = () => {
   return <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b from-primary/5 via-background to-secondary/10">
+      {/* Decorative stickers */}
+      <img src={stickerTools} alt="" className="absolute top-20 left-10 w-24 h-24 opacity-80 rotate-12 animate-float" style={{ animationDelay: '0.5s' }} />
+      <img src={stickerCtrlZ} alt="" className="absolute bottom-32 left-32 w-20 h-20 opacity-80 -rotate-6 animate-float" style={{ animationDelay: '1s' }} />
       <div className="w-full h-full flex items-center">
         <div className="flex items-center justify-between w-full">
           {/* Left Column - Text */}

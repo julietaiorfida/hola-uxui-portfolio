@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import stickerHelpMe from "@/assets/sticker-help-me-original.png";
 import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.png";
 import photoshopLogo from "@/assets/tools/photoshop.png";
@@ -31,6 +32,8 @@ const Experience = () => {
     description: "Diseño de clases personalizadas y desarrollo de materiales interactivos para distintos niveles"
   }];
   return <section id="experience" className="min-h-screen py-20 px-6 bg-gradient-to-b from-primary/5 via-background to-secondary/10 relative overflow-hidden" ref={ref}>
+      {/* Decorative sticker */}
+      <img src={stickerHelpMe} alt="" className="absolute bottom-20 right-16 w-28 h-28 opacity-75 -rotate-3 animate-float" style={{ animationDelay: '0.7s' }} />
       {/* Decorative stickers */}
       
       
