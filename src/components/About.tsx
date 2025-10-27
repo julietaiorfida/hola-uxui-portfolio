@@ -18,7 +18,7 @@ const About = () => {
     ref,
     isVisible
   } = useScrollAnimation();
-  return <section id="about" className="min-h-screen py-20 px-6 bg-gradient-to-br from-secondary/30 to-accent/20 relative overflow-hidden" ref={ref}>
+  return <section id="about" className="min-h-screen py-20 px-6 bg-background relative overflow-hidden" ref={ref}>
       <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo Carousel */}
