@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import julietaPhoto from "@/assets/julieta-sin-fondo.png";
-import characterPhoto from "@/assets/character-julieta-waving.png";
+import characterPhoto from "@/assets/character-julieta-final-no-bg.png";
 import characterPhoto2 from "@/assets/character-julieta.png";
 const About = () => {
   const {
@@ -62,18 +62,16 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-foreground/80">
               <p>
-                Estudiante de Diseño de Multimedia e Interacción con experiencia en creación de contenido digital, 
-                diseño visual y gestión de redes sociales. Me apasiona conectar el diseño con la experiencia del 
-                usuario, creando piezas funcionales, creativas y alineadas a las tendencias actuales.
+                Me di cuenta de que quería estudiar diseño cuando no podía usar una app sin pensar cómo mejorarla. Desde chica observaba tipografías, colores y composiciones sin saber que eso era diseño.
               </p>
               <p>
-                Trabajo con herramientas como Illustrator, Figma, Canva y Photoshop, y tengo conocimientos en UX/UI, 
-                branding, marketing digital y diseño web. Aprecio recibir feedback crítico y capacidad para aprender 
-                de forma constante.
+                Hoy estudio Diseño de Multimedia e Interacción en UADE. Me especializo en UX/UI, branding y contenido visual.
               </p>
               <p>
-                Busco oportunidades para desarrollarme en equipos interdisciplinarios, donde pueda aportar diseño 
-                con propósito e impacto.
+                Soy muy creativa, curiosa y detallista. Me encanta imaginar, experimentar y no paro hasta encontrar soluciones que realmente funcionen.
+              </p>
+              <p>
+                Para mí, diseñar no es solo resolver problemas: es hacer que las ideas se sientan, se entiendan y se disfruten.
               </p>
             </div>
           </div>
