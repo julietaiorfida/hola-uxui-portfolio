@@ -53,9 +53,9 @@ const Experience = () => {
               </div>)}
             </div>
 
-            {/* Skills and Key Strengths Grid */}
+            {/* Skills Grid */}
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Skills */}
+              {/* Skills Column 1 */}
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-4">Habilidades</h3>
                 <ul className="space-y-2">
@@ -82,25 +82,29 @@ const Experience = () => {
                 </ul>
               </div>
 
-              {/* Key Strengths */}
+              {/* Skills Column 2 */}
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">Puntos Fuertes Claves</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">Habilidades</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/80">Atención al detalle y enfoque en la experiencia del usuario</span>
+                    <span className="text-foreground/80">Ilustración digital</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/80">Capacidad de aprendizaje constante y adaptación</span>
+                    <span className="text-foreground/80">Diseño de presentaciones</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/80">Trabajo colaborativo en equipos interdisciplinarios</span>
+                    <span className="text-foreground/80">Edición de video y motion graphics</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/80">Gestión de proyectos y cumplimiento de plazos</span>
+                    <span className="text-foreground/80">Tipografía y composición</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-foreground/80">Maquetación editorial</span>
                   </li>
                 </ul>
               </div>
