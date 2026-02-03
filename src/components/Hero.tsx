@@ -1,6 +1,8 @@
-import heroImage from "@/assets/julieta-hero-main.png";
+import heroVideo from "@/assets/julieta-hero-video.mp4";
+
 const Hero = () => {
-  return <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b from-primary/5 via-background to-secondary/10">
+  return (
+    <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b from-primary/5 via-background to-secondary/10">
       <div className="w-full h-full flex items-center">
         <div className="flex items-center justify-between w-full">
           {/* Left Column - Text */}
@@ -11,15 +13,25 @@ const Hero = () => {
             </h1>
           </div>
 
-          {/* Right Column - Character (Full height, no margins) */}
+          {/* Right Column - Video (Full height, no margins) */}
           <div className="relative h-screen flex items-center justify-end">
-            <img src={heroImage} alt="Julieta" className="h-full w-auto object-contain object-right animate-fade-in" style={{
-            animationDelay: '0.1s',
-            maxWidth: 'none'
-          }} />
+            <video
+              src={heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-auto object-contain object-right animate-fade-in"
+              style={{
+                animationDelay: '0.1s',
+                maxWidth: 'none'
+              }}
+            />
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
