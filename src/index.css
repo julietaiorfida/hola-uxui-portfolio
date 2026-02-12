@@ -160,4 +160,82 @@ All colors MUST be HSL.
   .animate-folder-pop {
     animation: folder-pop 0.5s ease-out forwards;
   }
+
+  /* Flip Card */
+  .flip-card {
+    perspective: 800px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 550ms ease-in-out;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-visible .flip-card-inner,
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:hover,
+  .flip-card:focus-visible {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 6px 12px hsl(340 85% 60% / 0.15));
+    transition: transform 300ms ease, filter 300ms ease;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* On mobile, disable hover flip (use tap toggle only) */
+  @media (hover: none) {
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(0deg);
+    }
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .flip-card-inner {
+      transition: opacity 300ms ease;
+      transform-style: flat;
+    }
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus-visible .flip-card-inner,
+    .flip-card.flipped .flip-card-inner {
+      transform: none;
+    }
+    .flip-card:hover .flip-card-front,
+    .flip-card:focus-visible .flip-card-front,
+    .flip-card.flipped .flip-card-front {
+      opacity: 0;
+    }
+    .flip-card:hover .flip-card-back,
+    .flip-card:focus-visible .flip-card-back,
+    .flip-card.flipped .flip-card-back {
+      opacity: 1;
+      transform: none;
+    }
+    .flip-card-back {
+      opacity: 0;
+      transform: none;
+    }
+  }
 }

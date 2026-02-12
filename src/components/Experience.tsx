@@ -8,12 +8,7 @@ import capcutLogo from "@/assets/tools/capcut.png";
 import javascriptLogo from "@/assets/tools/javascript.png";
 import htmlLogo from "@/assets/tools/html.png";
 import cssLogo from "@/assets/tools/css.png";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import ToolFlipCard from "@/components/ToolFlipCard";
 const Experience = () => {
   const {
     ref,
@@ -123,117 +118,17 @@ const Experience = () => {
             {/* Tools */}
             <div>
               <h3 className="text-2xl font-bold text-primary mb-4">Herramientas</h3>
-              <TooltipProvider>
-                <div className="grid grid-cols-3 gap-4">
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={figmaLogo} alt="Figma" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">Figma</p>
-                      <p className="text-sm">Diseño de interfaces y prototipos interactivos</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={illustratorLogo} alt="Illustrator" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">Illustrator</p>
-                      <p className="text-sm">Ilustración vectorial y diseño gráfico</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={photoshopLogo} alt="Photoshop" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">Photoshop</p>
-                      <p className="text-sm">Edición de imágenes y retoque fotográfico</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={canvaLogo} alt="Canva" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">Canva</p>
-                      <p className="text-sm">Creación rápida de contenido visual para redes</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={afterEffectsLogo} alt="After Effects" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">After Effects</p>
-                      <p className="text-sm">Animación y motion graphics</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={capcutLogo} alt="CapCut" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">CapCut</p>
-                      <p className="text-sm">Edición de video para redes sociales</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={javascriptLogo} alt="JavaScript" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">JavaScript</p>
-                      <p className="text-sm">Programación web e interactividad</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={htmlLogo} alt="HTML" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">HTML</p>
-                      <p className="text-sm">Estructura y contenido web</p>
-                    </TooltipContent>
-                  </Tooltip>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
-                        <img src={cssLogo} alt="CSS" className="w-16 h-16" />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">CSS</p>
-                      <p className="text-sm">Estilos y diseño visual web</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </div>
-              </TooltipProvider>
+              <div className="grid grid-cols-3 gap-4">
+                <ToolFlipCard logo={figmaLogo} name="Figma" description="Diseño de interfaces, prototipado y sistemas de diseño." />
+                <ToolFlipCard logo={illustratorLogo} name="Illustrator" description="Vectores, iconografía y recursos visuales para UI." />
+                <ToolFlipCard logo={photoshopLogo} name="Photoshop" description="Edición y optimización de imágenes para web." />
+                <ToolFlipCard logo={canvaLogo} name="Canva" description="Piezas rápidas y contenidos para redes/presentaciones." />
+                <ToolFlipCard logo={afterEffectsLogo} name="After Effects" description="Microanimaciones y motion para presentaciones/UI." />
+                <ToolFlipCard logo={capcutLogo} name="CapCut" description="Edición ágil de video y reels." />
+                <ToolFlipCard logo={javascriptLogo} name="JavaScript" description="Interacciones, lógica y componentes dinámicos." />
+                <ToolFlipCard logo={htmlLogo} name="HTML5" description="Estructura semántica y accesible." />
+                <ToolFlipCard logo={cssLogo} name="CSS3" description="Estilos, responsive, animaciones y layouts." />
+              </div>
             </div>
           </div>
 
