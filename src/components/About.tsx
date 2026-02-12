@@ -27,7 +27,7 @@ const About = () => {
             <Carousel className="w-full">
               <CarouselContent>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaPhoto} 
                       alt="Julieta" 
@@ -36,7 +36,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={characterPhoto} 
                       alt="Character Julieta" 
@@ -45,7 +45,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaThumbsUp} 
                       alt="Julieta con actitud positiva" 
@@ -54,7 +54,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaPhone} 
                       alt="Julieta en llamada" 
@@ -63,7 +63,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaDrawing} 
                       alt="Julieta diseñando" 
@@ -72,7 +72,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaLaptop} 
                       alt="Julieta trabajando" 
@@ -81,7 +81,7 @@ const About = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl hover-img-zoom">
+                  <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
                     <img 
                       src={julietaTeam} 
                       alt="Julieta colaborando" 
