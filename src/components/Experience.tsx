@@ -39,7 +39,7 @@ const Experience = () => {
           <div className="space-y-12">
             {/* Timeline */}
             <div className="space-y-8">
-            {experiences.map((exp, index) => <div key={index} className="relative pl-8 border-l-4 border-primary animate-fade-in" style={{
+            {experiences.map((exp, index) => <div key={index} className="relative pl-8 border-l-4 border-primary animate-fade-in hover-timeline rounded-r-xl" style={{
               animationDelay: `${index * 0.15}s`
             }}>
                 <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary"></div>
@@ -135,7 +135,7 @@ const Experience = () => {
           {/* Skills */}
           <div className="space-y-8">
             {/* Education Card */}
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20 hover-sheen focus-ring" tabIndex={0}>
               <h3 className="text-3xl font-bold text-primary mb-6">Educación</h3>
               
               <div className="space-y-6">
@@ -154,7 +154,7 @@ const Experience = () => {
             </div>
 
             {/* Certifications Card */}
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20 hover-accent-border focus-ring" tabIndex={0}>
               <h3 className="text-3xl font-bold text-primary mb-6">Certificaciones</h3>
               
               <div className="space-y-6">
@@ -173,7 +173,7 @@ const Experience = () => {
             </div>
 
             {/* Volunteering Card */}
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20 hover-lift focus-ring" tabIndex={0}>
               <h3 className="text-3xl font-bold text-primary mb-6">Voluntariado</h3>
               
               <div>

@@ -94,6 +94,159 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  /* ── Micro-interaction utilities ── */
+
+  /* Cards: lift + deeper shadow */
+  .hover-lift {
+    transition: transform 250ms cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 250ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+  .hover-lift:hover,
+  .hover-lift:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -8px hsl(340 85% 60% / 0.18);
+  }
+
+  /* Sheen overlay: diagonal glint on hover */
+  .hover-sheen {
+    position: relative;
+    overflow: hidden;
+    transition: border-color 280ms ease-out, box-shadow 280ms ease-out;
+  }
+  .hover-sheen::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      hsl(340 85% 60% / 0.06) 50%,
+      transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    border-radius: inherit;
+  }
+  .hover-sheen:hover::after,
+  .hover-sheen:focus-visible::after {
+    transform: translateX(100%);
+  }
+  .hover-sheen:hover,
+  .hover-sheen:focus-visible {
+    border-color: hsl(340 85% 60% / 0.35);
+    box-shadow: 0 8px 24px -6px hsl(340 85% 60% / 0.12);
+  }
+
+  /* Accent border: animated top accent line */
+  .hover-accent-border {
+    position: relative;
+    transition: box-shadow 280ms ease-out;
+  }
+  .hover-accent-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: hsl(340 85% 60%);
+    border-radius: 999px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .hover-accent-border:hover::before,
+  .hover-accent-border:focus-visible::before {
+    transform: scaleX(1);
+  }
+  .hover-accent-border:hover,
+  .hover-accent-border:focus-visible {
+    box-shadow: 0 6px 20px -6px hsl(340 85% 60% / 0.1);
+  }
+
+  /* Link: animated underline left→right */
+  .hover-underline-anim {
+    background-image: linear-gradient(hsl(340 85% 60%), hsl(340 85% 60%));
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 280ms cubic-bezier(0.22, 1, 0.36, 1),
+                color 200ms ease-out;
+  }
+  .hover-underline-anim:hover,
+  .hover-underline-anim:focus-visible {
+    background-size: 100% 2px;
+  }
+
+  /* Images: subtle zoom + darken */
+  .hover-img-zoom {
+    overflow: hidden;
+  }
+  .hover-img-zoom img {
+    transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+                filter 320ms ease-out;
+    will-change: transform;
+  }
+  .hover-img-zoom:hover img,
+  .hover-img-zoom:focus-visible img {
+    transform: scale(1.03);
+    filter: brightness(0.96);
+  }
+
+  /* Button micro-lift */
+  .hover-btn {
+    transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 200ms ease-out;
+  }
+  .hover-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px -4px hsl(340 85% 60% / 0.25);
+  }
+  .hover-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px -2px hsl(340 85% 60% / 0.15);
+  }
+
+  /* Focus ring */
+  .focus-ring:focus-visible {
+    outline: 2px solid hsl(340 85% 60%);
+    outline-offset: 3px;
+    border-radius: inherit;
+  }
+
+  /* Timeline item hover */
+  .hover-timeline {
+    transition: background-color 250ms ease-out, border-color 250ms ease-out;
+  }
+  .hover-timeline:hover {
+    background-color: hsl(340 85% 60% / 0.04);
+    border-left-color: hsl(180 65% 55%);
+  }
+
+  /* Reduced motion overrides */
+  @media (prefers-reduced-motion: reduce) {
+    .hover-lift:hover,
+    .hover-lift:focus-visible {
+      transform: none;
+    }
+    .hover-sheen::after {
+      display: none;
+    }
+    .hover-img-zoom:hover img,
+    .hover-img-zoom:focus-visible img {
+      transform: none;
+    }
+    .hover-btn:hover,
+    .hover-btn:active {
+      transform: none;
+    }
+    .hover-timeline:hover {
+      border-left-color: hsl(180 65% 55%);
+    }
+  }
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }

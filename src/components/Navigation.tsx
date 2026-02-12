@@ -49,7 +49,7 @@ const Navigation = () => {
             key={item.id}
             onClick={() => scrollToSection(item.id)}
             size="sm"
-            className={`rounded-full px-4 py-2 text-xs font-bold shadow-lg hover:scale-105 transition-all hover:shadow-primary/50 ${
+            className={`rounded-full px-4 py-2 text-xs font-bold shadow-lg hover-btn focus-ring transition-opacity ${
               isScrolled ? 'opacity-30 hover:opacity-100' : 'opacity-100'
             }`}
           >
