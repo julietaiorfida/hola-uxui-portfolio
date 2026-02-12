@@ -23,15 +23,15 @@ const Contact = () => {
 
           <div className="space-y-4">
             <p className="text-lg text-muted-foreground">CABA, Argentina</p>
-            <a href="mailto:julietaiorfida@gmail.com" className="block text-xl font-semibold text-primary hover:underline">
+            <a href="mailto:julietaiorfida@gmail.com" className="block text-xl font-semibold text-primary hover-underline-anim focus-ring">
               julietaiorfida@gmail.com
             </a>
-            <a href="tel:+5491127284692" className="block text-lg text-foreground/80 hover:text-primary">
+            <a href="tel:+5491127284692" className="block text-lg text-foreground/80 hover-underline-anim hover:text-primary focus-ring">
               +54 11 2728-4692
             </a>
           </div>
 
-          <Button size="lg" asChild className="rounded-full px-12 py-8 text-xl font-bold shadow-2xl hover:scale-105 transition-all hover:shadow-primary/50">
+          <Button size="lg" asChild className="rounded-full px-12 py-8 text-xl font-bold shadow-2xl hover-btn focus-ring hover:shadow-primary/50">
             <a href="mailto:julietaiorfida@gmail.com">
               <Mail className="mr-3 h-6 w-6" />
               Enviar Mensaje
