@@ -24,41 +24,52 @@ const Hero = () => {
   useEffect(() => {
     if (prefersReduced) return;
 
-    let i = 0;
-    const speed1 = 90;
-    const speed2 = 110;
-    const pauseBetween = 350;
+    // Randomized delay to simulate natural handwriting rhythm
+    const handDelay = (base: number, variance: number) =>
+      base + (Math.random() - 0.3) * variance;
 
-    // Type line 1
-    const typeLine1 = () => {
-      if (i < line1.length) {
-        setTyped1(line1.slice(0, i + 1));
-        i++;
-        setTimeout(typeLine1, speed1);
-      } else {
-        // Pause then start line 2
-        setCursorPos(2);
-        setTimeout(typeLine2Start, pauseBetween);
-      }
+    let cancelled = false;
+
+    const writeLine = (
+      text: string,
+      setter: (v: string) => void,
+      baseSpeed: number,
+      variance: number
+    ): Promise<void> =>
+      new Promise((resolve) => {
+        let i = 0;
+        const next = () => {
+          if (cancelled) return;
+          if (i < text.length) {
+            i++;
+            setter(text.slice(0, i));
+            // Slightly longer pause on spaces/commas for natural feel
+            const char = text[i - 1];
+            const extra = char === ',' ? 180 : char === ' ' ? 60 : 0;
+            setTimeout(next, handDelay(baseSpeed, variance) + extra);
+          } else {
+            resolve();
+          }
+        };
+        next();
+      });
+
+    const run = async () => {
+      await new Promise((r) => setTimeout(r, 300));
+      // Line 1 – current speed feels good
+      await writeLine(line1, setTyped1, 90, 50);
+      if (cancelled) return;
+      // Pause between lines
+      setCursorPos(2);
+      await new Promise((r) => setTimeout(r, 400));
+      // Line 2 – slower, more deliberate
+      await writeLine(line2, setTyped2, 160, 70);
+      if (cancelled) return;
+      setTimeout(() => setShowCursor(false), 800);
     };
 
-    let j = 0;
-    const typeLine2Start = () => {
-      typeLine2();
-    };
-    const typeLine2 = () => {
-      if (j < line2.length) {
-        setTyped2(line2.slice(0, j + 1));
-        j++;
-        setTimeout(typeLine2, speed2);
-      } else {
-        // Done – fade cursor out
-        setTimeout(() => setShowCursor(false), 600);
-      }
-    };
-
-    const startDelay = setTimeout(typeLine1, 300);
-    return () => clearTimeout(startDelay);
+    run();
+    return () => { cancelled = true; };
   }, [line1, line2, prefersReduced]);
 
   return (
