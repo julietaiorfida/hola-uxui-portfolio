@@ -24,7 +24,7 @@ const Hero = () => {
             <h1 className="text-[5rem] lg:text-[11rem] font-black leading-none handwriting text-primary md:text-8xl">
               <span className="brush-reveal brush-reveal-line1">{line1}</span>
               <br />
-              <span className="text-accent text-[5.5rem] lg:text-[12rem] md:text-[10rem] brush-reveal brush-reveal-line2">{line2}</span>
+              <span className="text-accent text-[5.5rem] lg:text-[12rem] md:text-[10rem] brush-reveal brush-reveal-line2 pl-8 md:pl-16 lg:pl-24">{line2}</span>
             </h1>
           </div>
 
