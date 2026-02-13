@@ -92,6 +92,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "tool.javascript": "Interacciones, lógica y componentes dinámicos.",
     "tool.html": "Estructura semántica y accesible.",
     "tool.css": "Estilos, responsive, animaciones y layouts.",
+    "tool.chatgpt": "Ideación, variantes de copy UX y soporte para research.",
+    "tool.lovable": "Iteración rápida de UI y ajustes con prompts.",
+    "tool.notion": "Documentación, briefs, research y organización del proyecto.",
 
     // Contact
     "contact.title": "CONTACT",
@@ -193,6 +196,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "tool.javascript": "Interactions, logic, and dynamic components.",
     "tool.html": "Semantic and accessible structure.",
     "tool.css": "Styles, responsive, animations, and layouts.",
+    "tool.chatgpt": "Ideation, UX copy variants, and research support.",
+    "tool.lovable": "Rapid UI iteration and prompt-based adjustments.",
+    "tool.notion": "Documentation, briefs, research, and project organization.",
 
     // Contact
     "contact.title": "CONTACT",
