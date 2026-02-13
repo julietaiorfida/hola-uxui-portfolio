@@ -308,19 +308,56 @@ All colors MUST be HSL.
     }
   }
 
-  /* Handwriting cursor – soft fade instead of mechanical blink */
-  @keyframes handwriting-pulse {
-    0%, 100% { opacity: 0.9; }
-    50% { opacity: 0.25; }
+  /* ─── Brush reveal animation ─── */
+  @keyframes brush-reveal {
+    from {
+      -webkit-mask-size: 0% 100%;
+      mask-size: 0% 100%;
+    }
+    to {
+      -webkit-mask-size: 300% 100%;
+      mask-size: 300% 100%;
+    }
   }
-  .animate-typewriter-cursor {
-    animation: handwriting-pulse 1s ease-in-out infinite;
-    border-radius: 1px;
+
+  .brush-reveal {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      black 0%, black 33%,
+      rgba(0,0,0,0.7) 40%,
+      rgba(0,0,0,0.3) 45%,
+      transparent 50%
+    );
+    mask-image: linear-gradient(
+      to right,
+      black 0%, black 33%,
+      rgba(0,0,0,0.7) 40%,
+      rgba(0,0,0,0.3) 45%,
+      transparent 50%
+    );
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: left center;
+    mask-position: left center;
+    -webkit-mask-size: 0% 100%;
+    mask-size: 0% 100%;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .brush-reveal-line1 {
+    animation: brush-reveal 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+  }
+
+  .brush-reveal-line2 {
+    animation: brush-reveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) 1.6s forwards;
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .animate-typewriter-cursor {
-      display: none;
+    .brush-reveal {
+      -webkit-mask-size: 300% 100% !important;
+      mask-size: 300% 100% !important;
+      animation: none !important;
     }
   }
 }
