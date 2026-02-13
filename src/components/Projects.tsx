@@ -9,12 +9,28 @@ const Projects = () => {
   const gridRef = useReveal({ variant: 'up', stagger: true, staggerDelay: 100, delay: 150 });
 
   const projects = [
-    { titleKey: "projects.p1.title", descKey: "projects.p1.desc", catKey: "projects.p1.cat", color: "bg-[hsl(340,85%,65%)]" },
-    { titleKey: "projects.p2.title", descKey: "projects.p2.desc", catKey: "projects.p2.cat", color: "bg-[hsl(65,85%,60%)]" },
-    { titleKey: "projects.p3.title", descKey: "projects.p3.desc", catKey: "projects.p3.cat", color: "bg-[hsl(270,70%,60%)]" },
-    { titleKey: "projects.p4.title", descKey: "projects.p4.desc", catKey: "projects.p4.cat", color: "bg-[hsl(25,90%,60%)]" },
-    { titleKey: "projects.p5.title", descKey: "projects.p5.desc", catKey: "projects.p5.cat", color: "bg-[hsl(195,80%,50%)]" },
-    { titleKey: "projects.p6.title", descKey: "projects.p6.desc", catKey: "projects.p6.cat", color: "bg-[hsl(160,70%,50%)]" },
+    {
+      titleKey: "projects.p1.title",
+      descKey: "projects.p1.desc",
+      catKey: "projects.p1.cat",
+      color: "bg-[hsl(340,85%,65%)]",
+      href: "https://www.behance.net/gallery/231373469/Branding-de-vinos",
+    },
+    {
+      titleKey: "projects.p2.title",
+      descKey: "projects.p2.desc",
+      catKey: "projects.p2.cat",
+      color: "bg-[hsl(65,85%,60%)]",
+      // TODO: agregar link Behance de Havanna
+      href: "",
+    },
+    {
+      titleKey: "projects.p3.title",
+      descKey: "projects.p3.desc",
+      catKey: "projects.p3.cat",
+      color: "bg-[hsl(270,70%,60%)]",
+      href: "https://www.behance.net/gallery/232999069/Diseno-de-feed",
+    },
   ];
 
   return (
@@ -37,9 +53,17 @@ const Projects = () => {
               </span>
               <h3 className="text-2xl font-bold text-white mb-4">{t(project.titleKey)}</h3>
               <p className="text-white/90 mb-6 flex-1">{t(project.descKey)}</p>
-              <Button className="w-full rounded-full font-semibold bg-white text-black hover:bg-white/90 mt-auto btn-interactive">
-                {t("projects.viewProject")} <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
+              {project.href ? (
+                <a href={project.href} target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                  <Button className="w-full rounded-full font-semibold bg-white text-black hover:bg-white/90 btn-interactive">
+                    {t("projects.viewProject")} <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              ) : (
+                <Button className="w-full rounded-full font-semibold bg-white text-black hover:bg-white/90 mt-auto btn-interactive" disabled>
+                  {t("projects.viewProject")} <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
+              )}
             </div>
           ))}
         </div>
