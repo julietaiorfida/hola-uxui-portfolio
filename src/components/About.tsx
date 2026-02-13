@@ -1,5 +1,5 @@
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useReveal } from "@/hooks/useReveal";
 import {
   Carousel,
   CarouselContent,
@@ -17,8 +17,10 @@ import julietaTeam from "@/assets/julieta-team.png";
 import usersFirstSticker from "@/assets/sticker-users-first-star-original.png";
 
 const About = () => {
-  const { ref, isVisible } = useScrollAnimation();
   const { t } = useLanguage();
+  const imageRef = useReveal({ variant: 'scale' });
+  const titleRef = useReveal({ variant: 'up', delay: 100 });
+  const textRef = useReveal({ variant: 'right', delay: 200 });
 
   const images = [
     { src: julietaPhoto, alt: "Julieta" },
@@ -31,10 +33,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen py-20 px-6 bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden" ref={ref}>
-      <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
+    <section id="about" className="min-h-screen py-20 px-6 bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div ref={imageRef} className="relative">
             <Carousel className="w-full">
               <CarouselContent>
                 {images.map((img, i) => (
@@ -52,10 +54,12 @@ const About = () => {
           </div>
 
           <div>
-            <h2 className="text-6xl md:text-7xl font-black text-primary mb-8">
-              {t("about.title")}
-            </h2>
-            <div className="space-y-4 text-lg text-foreground/80">
+            <div ref={titleRef}>
+              <h2 className="text-6xl md:text-7xl font-black text-primary mb-8">
+                {t("about.title")}
+              </h2>
+            </div>
+            <div ref={textRef} className="space-y-4 text-lg text-foreground/80">
               <p>{t("about.p1")}</p>
               <p>{t("about.p2")}</p>
               <p>{t("about.p3")}</p>

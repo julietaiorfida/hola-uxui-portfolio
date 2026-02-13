@@ -1,5 +1,5 @@
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useReveal } from "@/hooks/useReveal";
 import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.png";
 import photoshopLogo from "@/assets/tools/photoshop.png";
@@ -15,8 +15,14 @@ import notionLogo from "@/assets/tools/notion.svg";
 import ToolFlipCard from "@/components/ToolFlipCard";
 
 const Experience = () => {
-  const { ref, isVisible } = useScrollAnimation();
   const { t } = useLanguage();
+  const titleRef = useReveal({ variant: 'up' });
+  const timelineRef = useReveal({ variant: 'left', stagger: true, staggerDelay: 120, delay: 100 });
+  const skillsRef = useReveal({ variant: 'up', delay: 200 });
+  const toolsRef = useReveal({ variant: 'up', stagger: true, staggerDelay: 60, delay: 250 });
+  const eduRef = useReveal({ variant: 'right', delay: 100 });
+  const certRef = useReveal({ variant: 'right', delay: 200 });
+  const volRef = useReveal({ variant: 'right', delay: 300 });
 
   const experiences = [
     { roleKey: "exp.role1", companyKey: "exp.company1", periodKey: "exp.period1", descKey: "exp.desc1" },
@@ -27,18 +33,20 @@ const Experience = () => {
   const skillsCol2 = ["exp.skill6", "exp.skill7", "exp.skill8", "exp.skill9", "exp.skill10"];
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-6 bg-gradient-to-b from-primary/5 via-background to-secondary/10 relative overflow-hidden" ref={ref}>
-      <div className={`max-w-7xl mx-auto ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
-        <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
-          {t("exp.title")}
-        </h2>
+    <section id="experience" className="min-h-screen py-20 px-6 bg-gradient-to-b from-primary/5 via-background to-secondary/10 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div ref={titleRef}>
+          <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
+            {t("exp.title")}
+          </h2>
+        </div>
 
         <div className="grid md:grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
           <div className="space-y-12">
             {/* Timeline */}
-            <div className="space-y-8">
+            <div ref={timelineRef} className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="relative pl-8 border-l-4 border-primary animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
+                <div key={index} data-reveal-item className="relative pl-8 border-l-4 border-primary">
                   <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary"></div>
                   <h3 className="text-2xl font-bold text-foreground mb-1">{t(exp.roleKey)}</h3>
                   <p className="text-lg text-primary font-semibold mb-2">{t(exp.companyKey)}</p>
@@ -49,7 +57,7 @@ const Experience = () => {
             </div>
 
             {/* Skills */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div ref={skillsRef} className="grid md:grid-cols-2 gap-8">
               {[skillsCol1, skillsCol2].map((col, ci) => (
                 <div key={ci}>
                   <h3 className="text-2xl font-bold text-primary mb-4">{t("exp.skillsTitle")}</h3>
@@ -68,26 +76,26 @@ const Experience = () => {
             {/* Tools */}
             <div>
               <h3 className="text-2xl font-bold text-primary mb-4">{t("exp.toolsTitle")}</h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-                <ToolFlipCard logo={figmaLogo} name="Figma" description={t("tool.figma")} />
-                <ToolFlipCard logo={illustratorLogo} name="Illustrator" description={t("tool.illustrator")} />
-                <ToolFlipCard logo={photoshopLogo} name="Photoshop" description={t("tool.photoshop")} />
-                <ToolFlipCard logo={canvaLogo} name="Canva" description={t("tool.canva")} />
-                <ToolFlipCard logo={afterEffectsLogo} name="After Effects" description={t("tool.aftereffects")} />
-                <ToolFlipCard logo={capcutLogo} name="CapCut" description={t("tool.capcut")} />
-                <ToolFlipCard logo={javascriptLogo} name="JavaScript" description={t("tool.javascript")} />
-                <ToolFlipCard logo={htmlLogo} name="HTML5" description={t("tool.html")} />
-                <ToolFlipCard logo={cssLogo} name="CSS3" description={t("tool.css")} />
-                <ToolFlipCard logo={chatgptLogo} name="ChatGPT" description={t("tool.chatgpt")} />
-                <ToolFlipCard logo={lovableLogo} name="Lovable" description={t("tool.lovable")} />
-                <ToolFlipCard logo={notionLogo} name="Notion" description={t("tool.notion")} />
+              <div ref={toolsRef} className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                <div data-reveal-item><ToolFlipCard logo={figmaLogo} name="Figma" description={t("tool.figma")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={illustratorLogo} name="Illustrator" description={t("tool.illustrator")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={photoshopLogo} name="Photoshop" description={t("tool.photoshop")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={canvaLogo} name="Canva" description={t("tool.canva")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={afterEffectsLogo} name="After Effects" description={t("tool.aftereffects")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={capcutLogo} name="CapCut" description={t("tool.capcut")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={javascriptLogo} name="JavaScript" description={t("tool.javascript")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={htmlLogo} name="HTML5" description={t("tool.html")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={cssLogo} name="CSS3" description={t("tool.css")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={chatgptLogo} name="ChatGPT" description={t("tool.chatgpt")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={lovableLogo} name="Lovable" description={t("tool.lovable")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={notionLogo} name="Notion" description={t("tool.notion")} /></div>
               </div>
             </div>
           </div>
 
           {/* Right Column */}
           <div className="space-y-8">
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div ref={eduRef} className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
               <h3 className="text-3xl font-bold text-primary mb-6">{t("exp.eduTitle")}</h3>
               <div className="space-y-6">
                 <div>
@@ -103,7 +111,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div ref={certRef} className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
               <h3 className="text-3xl font-bold text-primary mb-6">{t("exp.certTitle")}</h3>
               <div className="space-y-6">
                 <div>
@@ -119,7 +127,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
+            <div ref={volRef} className="bg-background rounded-3xl p-8 shadow-lg border-2 border-primary/20">
               <h3 className="text-3xl font-bold text-primary mb-6">{t("exp.volTitle")}</h3>
               <div>
                 <p className="text-lg font-semibold text-accent mb-1">{t("exp.vol.org")}</p>
