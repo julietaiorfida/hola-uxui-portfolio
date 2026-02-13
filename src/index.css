@@ -307,4 +307,19 @@ All colors MUST be HSL.
       transform: none;
     }
   }
+
+  /* Typewriter cursor */
+  @keyframes typewriter-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .animate-typewriter-cursor {
+    animation: typewriter-blink 0.7s step-end infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-typewriter-cursor {
+      display: none;
+    }
+  }
 }
