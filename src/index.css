@@ -321,6 +321,9 @@ All colors MUST be HSL.
   }
 
   .brush-reveal {
+    display: inline-block;
+    padding: 0.15em 0.05em;
+    margin: -0.15em -0.05em;
     -webkit-mask-image: linear-gradient(
       to right,
       black 0%, black 25%,
