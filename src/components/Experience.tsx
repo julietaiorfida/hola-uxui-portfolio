@@ -9,6 +9,9 @@ import capcutLogo from "@/assets/tools/capcut.png";
 import javascriptLogo from "@/assets/tools/javascript.png";
 import htmlLogo from "@/assets/tools/html.png";
 import cssLogo from "@/assets/tools/css.png";
+import chatgptLogo from "@/assets/tools/chatgpt.svg";
+import lovableLogo from "@/assets/tools/lovable.png";
+import notionLogo from "@/assets/tools/notion.svg";
 import ToolFlipCard from "@/components/ToolFlipCard";
 
 const Experience = () => {
@@ -65,7 +68,7 @@ const Experience = () => {
             {/* Tools */}
             <div>
               <h3 className="text-2xl font-bold text-primary mb-4">{t("exp.toolsTitle")}</h3>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                 <ToolFlipCard logo={figmaLogo} name="Figma" description={t("tool.figma")} />
                 <ToolFlipCard logo={illustratorLogo} name="Illustrator" description={t("tool.illustrator")} />
                 <ToolFlipCard logo={photoshopLogo} name="Photoshop" description={t("tool.photoshop")} />
@@ -75,6 +78,9 @@ const Experience = () => {
                 <ToolFlipCard logo={javascriptLogo} name="JavaScript" description={t("tool.javascript")} />
                 <ToolFlipCard logo={htmlLogo} name="HTML5" description={t("tool.html")} />
                 <ToolFlipCard logo={cssLogo} name="CSS3" description={t("tool.css")} />
+                <ToolFlipCard logo={chatgptLogo} name="ChatGPT" description={t("tool.chatgpt")} />
+                <ToolFlipCard logo={lovableLogo} name="Lovable" description={t("tool.lovable")} />
+                <ToolFlipCard logo={notionLogo} name="Notion" description={t("tool.notion")} />
               </div>
             </div>
           </div>
