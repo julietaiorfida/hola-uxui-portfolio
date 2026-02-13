@@ -24,7 +24,7 @@ const Experience = () => {
   ];
 
   const skillsCol1 = ["exp.skill1", "exp.skill2", "exp.skill3", "exp.skill4", "exp.skill5"];
-  const skillsCol2 = ["exp.skill6", "exp.skill7", "exp.skill8", "exp.skill9", "exp.skill10"];
+  const skillsCol2 = ["exp.skill6", "exp.skill7", "exp.skill8", "exp.skill9", "exp.skill10", "exp.skill11"];
 
   return (
     <section id="experience" className="min-h-screen py-20 px-6 bg-gradient-to-b from-primary/5 via-background to-secondary/10 relative overflow-hidden" ref={ref}>
