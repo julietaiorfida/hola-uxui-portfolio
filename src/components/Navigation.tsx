@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -24,15 +25,14 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { id: "about", label: "ABOUT ME" },
-    { id: "projects", label: "PROJECTS" },
-    { id: "experience", label: "EXPERIENCE" },
-    { id: "contact", label: "CONTACT" },
+    { id: "about", labelKey: "nav.about" },
+    { id: "projects", labelKey: "nav.projects" },
+    { id: "experience", labelKey: "nav.experience" },
+    { id: "contact", labelKey: "nav.contact" },
   ];
 
   return (
     <>
-      {/* Mobile Menu Button */}
       <Button
         variant="default"
         size="icon"
@@ -42,7 +42,6 @@ const Navigation = () => {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </Button>
 
-      {/* Desktop Navigation - Horizontal Header */}
       <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-row gap-2">
         {navItems.map((item) => (
           <Button
@@ -53,12 +52,11 @@ const Navigation = () => {
               isScrolled ? 'opacity-30 hover:opacity-100' : 'opacity-100'
             }`}
           >
-            {item.label}
+            {t(item.labelKey)}
           </Button>
         ))}
       </nav>
 
-      {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-sm flex items-center justify-center">
           <nav className="flex flex-col gap-4 items-center">
@@ -68,7 +66,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection(item.id)}
                 className="rounded-full px-10 py-7 text-xl font-bold shadow-2xl hover:shadow-primary/50"
               >
-                {item.label}
+                {t(item.labelKey)}
               </Button>
             ))}
           </nav>

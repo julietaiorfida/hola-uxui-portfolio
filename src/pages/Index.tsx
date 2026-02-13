@@ -4,8 +4,11 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="relative">
       <Navigation />
@@ -15,9 +18,8 @@ const Index = () => {
       <Experience />
       <Contact />
       
-      {/* Footer */}
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
-        <p className="text-sm">© 2024 Maria Julieta Iorfida - Diseñado con ❤️</p>
+        <p className="text-sm">{t("footer.text")}</p>
       </footer>
     </div>
   );
