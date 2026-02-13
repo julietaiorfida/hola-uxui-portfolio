@@ -1,24 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/i18n/LanguageContext";
+
 const Contact = () => {
-  const {
-    ref,
-    isVisible
-  } = useScrollAnimation();
-  return <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden" ref={ref}>
-      {/* Decorative stickers */}
-      
-      
+  const { ref, isVisible } = useScrollAnimation();
+  const { t } = useLanguage();
+
+  return (
+    <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden" ref={ref}>
       <div className={`max-w-7xl mx-auto w-full ${isVisible ? 'scroll-fade-in' : 'opacity-0'}`}>
         <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center">
-          CONTACT
+          {t("contact.title")}
         </h2>
 
         <div className="max-w-2xl mx-auto text-center space-y-8">
           <p className="text-2xl text-foreground/80">
-            ¿Tienes un proyecto en mente? <br />
-            <span className="text-primary font-bold">¡Hablemos!</span>
+            {t("contact.cta")} <br />
+            <span className="text-primary font-bold">{t("contact.ctaBold")}</span>
           </p>
 
           <div className="space-y-4">
@@ -34,7 +33,7 @@ const Contact = () => {
           <Button size="lg" asChild className="rounded-full px-12 py-8 text-xl font-bold shadow-2xl hover:scale-105 transition-all hover:shadow-primary/50">
             <a href="mailto:julietaiorfida@gmail.com">
               <Mail className="mr-3 h-6 w-6" />
-              Enviar Mensaje
+              {t("contact.send")}
             </a>
           </Button>
 
@@ -61,6 +60,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;
