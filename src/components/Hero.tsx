@@ -9,7 +9,7 @@ const Hero = () => {
   const videoRef = useReveal({ variant: 'scale', delay: 400 });
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b from-primary/5 via-background to-secondary/10">
+    <section className="min-h-screen flex items-center relative overflow-hidden bg-white">
       {/* Language Toggle */}
       <div className="absolute top-6 left-6 z-20">
         <LanguageToggle />
