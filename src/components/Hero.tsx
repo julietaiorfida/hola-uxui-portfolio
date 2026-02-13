@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div ref={videoRef} className="relative h-screen flex items-center justify-end">
+          <div ref={videoRef} className="relative h-screen flex items-center justify-end -mr-20">
             <video
               src={heroVideo}
               autoPlay
