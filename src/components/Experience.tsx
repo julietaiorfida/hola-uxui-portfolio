@@ -9,7 +9,7 @@ import capcutLogo from "@/assets/tools/capcut.png";
 import javascriptLogo from "@/assets/tools/javascript.png";
 import htmlLogo from "@/assets/tools/html.png";
 import cssLogo from "@/assets/tools/css.png";
-import chatgptLogo from "@/assets/tools/chatgpt.svg";
+import chatgptLogo from "@/assets/tools/chatgpt.png";
 import lovableLogo from "@/assets/tools/lovable.png";
 import notionLogo from "@/assets/tools/notion.svg";
 import ToolFlipCard from "@/components/ToolFlipCard";
