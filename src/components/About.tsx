@@ -14,7 +14,7 @@ import julietaPhone from "@/assets/julieta-phone.png";
 import julietaDrawing from "@/assets/julieta-drawing.png";
 import julietaLaptop from "@/assets/julieta-laptop.png";
 import julietaTeam from "@/assets/julieta-team.png";
-import usersFirstSticker from "@/assets/sticker-users-first-star-original.png";
+
 
 const About = () => {
   const { t } = useLanguage();
@@ -50,7 +50,7 @@ const About = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-            <img src={usersFirstSticker} alt="Users First" className="absolute -bottom-6 -right-6 w-40 h-40 animate-float" />
+            
           </div>
 
           <div>
