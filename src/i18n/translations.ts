@@ -7,13 +7,13 @@ export const translations: Record<Lang, Record<string, string>> = {
     "hero.title2": "Julieta",
 
     // Nav
-    "nav.about": "ABOUT ME",
-    "nav.projects": "PROJECTS",
-    "nav.experience": "EXPERIENCE",
-    "nav.contact": "CONTACT",
+    "nav.about": "SOBRE MÍ",
+    "nav.projects": "PROYECTOS",
+    "nav.experience": "EXPERIENCIA",
+    "nav.contact": "CONTACTO",
 
     // About
-    "about.title": "ABOUT ME",
+    "about.title": "SOBRE MÍ",
     "about.p1": "Me di cuenta de que quería estudiar diseño cuando no podía usar una app sin pensar cómo mejorarla. Desde chica observaba tipografías, colores y composiciones sin saber que eso era diseño.",
     "about.p2": "Hoy estudio Diseño de Multimedia e Interacción en UADE. Me especializo en UX/UI, branding y contenido visual.",
     "about.p3": "Soy muy creativa, curiosa y detallista. Me encanta imaginar, experimentar y no paro hasta encontrar soluciones que realmente funcionen.",
@@ -33,7 +33,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "projects.p3.cat": "Social Media / Feed",
 
     // Experience
-    "exp.title": "EXPERIENCE",
+    "exp.title": "EXPERIENCIA",
     "exp.role1": "Diseñadora Digital y Community Manager",
     "exp.company1": "Team Arq, Marchesini de Remax Urbana",
     "exp.period1": "Marzo 2023 - Actualidad",
@@ -88,7 +88,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "tool.notion": "Documentación, briefs, research y organización del proyecto.",
 
     // Contact
-    "contact.title": "CONTACT",
+    "contact.title": "CONTACTO",
     "contact.cta": "¿Tienes un proyecto en mente?",
     "contact.ctaBold": "¡Hablemos!",
     "contact.send": "Enviar Mensaje",
