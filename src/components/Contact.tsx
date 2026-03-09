@@ -49,7 +49,7 @@ const Contact = () => {
             <div data-reveal-item>
               <Button variant="outline" size="icon" asChild className="group rounded-full w-28 h-28 border-2 shadow-lg hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-primary/50 transition-all hover:scale-110">
                 <a href="https://www.linkedin.com/in/mariajulietaiorfida/" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="!h-14 !w-14 transition-transform duration-200 ease-out group-hover:scale-105" />
+                  <Linkedin className="!h-12 !w-12 transition-transform duration-200 ease-out group-hover:scale-105" />
                 </a>
               </Button>
             </div>
