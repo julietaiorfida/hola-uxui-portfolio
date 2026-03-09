@@ -1,21 +1,27 @@
 import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/useReveal";
+import serviceUiux from "@/assets/service-uiux.jpg";
+import serviceWebdesign from "@/assets/service-webdesign.jpg";
+import serviceLanding from "@/assets/service-landing.jpg";
 
 const services = [
   {
     titleKey: "services.s1.title",
     descKey: "services.s1.desc",
+    image: serviceUiux,
     accent: false,
   },
   {
     titleKey: "services.s2.title",
     descKey: "services.s2.desc",
+    image: serviceWebdesign,
     accent: true,
   },
   {
     titleKey: "services.s3.title",
     descKey: "services.s3.desc",
+    image: serviceLanding,
     accent: false,
   },
 ];
@@ -42,9 +48,9 @@ const Services = () => {
             <div
               key={i}
               data-reveal-item
-              className={`group relative rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hover:scale-[1.03] ${
+              className={`group relative rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hover:scale-[1.03] flex flex-col ${
                 service.accent
-                  ? "bg-primary text-primary-foreground ring-4 ring-primary/30 scale-[1.02]"
+                  ? "bg-primary text-primary-foreground ring-4 ring-primary/30 md:scale-[1.03]"
                   : "bg-card text-card-foreground border border-border"
               }`}
             >
@@ -66,36 +72,20 @@ const Services = () => {
                 </p>
               </div>
 
-              {/* Decorative mockup area */}
-              <div
-                className={`mx-6 mb-6 rounded-2xl h-44 flex items-end justify-center overflow-hidden ${
-                  service.accent ? "bg-primary-foreground/15" : "bg-muted/60"
-                }`}
-              >
-                {/* Stylised phone/screen shapes */}
-                <div className="flex gap-2 items-end pb-0 translate-y-4">
-                  <div
-                    className={`w-16 h-28 rounded-t-xl ${
-                      service.accent ? "bg-primary-foreground/20" : "bg-primary/15"
-                    }`}
-                  />
-                  <div
-                    className={`w-20 h-36 rounded-t-xl ${
-                      service.accent ? "bg-primary-foreground/30" : "bg-primary/25"
-                    }`}
-                  />
-                  <div
-                    className={`w-16 h-24 rounded-t-xl ${
-                      service.accent ? "bg-primary-foreground/20" : "bg-primary/15"
-                    }`}
-                  />
-                </div>
+              {/* Image area */}
+              <div className="mx-6 mb-6 rounded-2xl overflow-hidden flex-1 min-h-[200px] relative">
+                <img
+                  src={service.image}
+                  alt={t(service.titleKey)}
+                  className="w-full h-full object-cover rounded-2xl"
+                  loading="lazy"
+                />
               </div>
 
               {/* Arrow button */}
-              <div className="absolute bottom-6 right-6">
+              <div className="absolute bottom-6 right-6 z-10">
                 <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-110 ${
+                  className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110 ${
                     service.accent
                       ? "bg-primary-foreground text-primary"
                       : "bg-primary text-primary-foreground"
