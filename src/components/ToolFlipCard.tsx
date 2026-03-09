@@ -32,11 +32,11 @@ const ToolFlipCard = ({ logo, name, description }: ToolFlipCardProps) => {
       <div className="flip-card-inner">
         {/* Front */}
         <div className="flip-card-front bg-background rounded-2xl p-6 shadow-lg border-2 border-primary/20 flex items-center justify-center">
-          <img src={logo} alt={name} className="w-16 h-16" />
+          <img src={logo} alt={name} className="w-16 h-16" translate="no" />
         </div>
         {/* Back */}
         <div className="flip-card-back bg-primary rounded-2xl p-4 shadow-lg border-2 border-primary/20 flex flex-col items-center justify-center text-center">
-          <p className="font-bold text-primary-foreground text-sm mb-1">{name}</p>
+          <p className="font-bold text-primary-foreground text-sm mb-1" translate="no">{name}</p>
           <p className="text-primary-foreground/90 text-xs leading-snug">{description}</p>
         </div>
       </div>
