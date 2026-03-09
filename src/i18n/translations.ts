@@ -19,6 +19,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.p3": "Soy muy creativa, curiosa y detallista. Me encanta imaginar, experimentar y no paro hasta encontrar soluciones que realmente funcionen.",
     "about.p4": "Para mí, diseñar no es solo resolver problemas: es hacer que las ideas se sientan, se entiendan y se disfruten.",
 
+    // Services
+    "services.title": "MIS SERVICIOS",
+    "services.s1.title": "Diseño UI/UX",
+    "services.s1.desc": "Interfaces intuitivas, centradas en el usuario, con prototipos interactivos y sistemas de diseño escalables.",
+    "services.s2.title": "Diseño Web",
+    "services.s2.desc": "Sitios web modernos y responsivos con identidad visual sólida, optimizados para la mejor experiencia.",
+    "services.s3.title": "Landing Page",
+    "services.s3.desc": "Páginas de aterrizaje atractivas y efectivas, diseñadas para convertir visitantes en clientes.",
+
     // Projects
     "projects.title": "MIS PROYECTOS DESTACADOS",
     "projects.viewProject": "Ver Proyecto",
@@ -113,6 +122,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.p2": "Today I study Multimedia and Interaction Design at UADE. I specialize in UX/UI, branding, and visual content.",
     "about.p3": "I'm very creative, curious, and detail-oriented. I love imagining, experimenting, and I don't stop until I find solutions that truly work.",
     "about.p4": "For me, designing is not just solving problems: it's making ideas feel, be understood, and be enjoyed.",
+
+    // Services
+    "services.title": "MY SERVICES",
+    "services.s1.title": "UI/UX Design",
+    "services.s1.desc": "Intuitive, user-centered interfaces with interactive prototypes and scalable design systems.",
+    "services.s2.title": "Web Design",
+    "services.s2.desc": "Modern, responsive websites with solid visual identity, optimized for the best experience.",
+    "services.s3.title": "Landing Page",
+    "services.s3.desc": "Attractive and effective landing pages designed to convert visitors into clients.",
 
     // Projects
     "projects.title": "MY FEATURED PROJECTS",
