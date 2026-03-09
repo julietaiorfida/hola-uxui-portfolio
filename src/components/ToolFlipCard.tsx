@@ -36,7 +36,7 @@ const ToolFlipCard = ({ logo, name, description }: ToolFlipCardProps) => {
         </div>
         {/* Back */}
         <div className="flip-card-back bg-primary rounded-2xl p-4 shadow-lg border-2 border-primary/20 flex flex-col items-center justify-center text-center">
-          <p className="font-bold text-primary-foreground text-sm mb-1">{name}</p>
+          <p className="font-bold text-primary-foreground text-sm mb-1" translate="no">{name}</p>
           <p className="text-primary-foreground/90 text-xs leading-snug">{description}</p>
         </div>
       </div>
