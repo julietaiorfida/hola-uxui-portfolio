@@ -19,6 +19,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.p3": "Soy muy creativa, curiosa y detallista. Me encanta imaginar, experimentar y no paro hasta encontrar soluciones que realmente funcionen.",
     "about.p4": "Para mí, diseñar no es solo resolver problemas: es hacer que las ideas se sientan, se entiendan y se disfruten.",
 
+    // Services
+    "services.title": "MIS SERVICIOS",
+    "services.s1.title": "Diseño UI/UX",
+    "services.s1.desc": "Interfaces intuitivas, centradas en el usuario, con prototipos interactivos y sistemas de diseño escalables.",
+    "services.s2.title": "Diseño Web",
+    "services.s2.desc": "Sitios web modernos y responsivos con identidad visual sólida, optimizados para la mejor experiencia.",
+    "services.s3.title": "Landing Page",
+    "services.s3.desc": "Páginas de aterrizaje atractivas y efectivas, diseñadas para convertir visitantes en clientes.",
+
     // Projects
     "projects.title": "MIS PROYECTOS DESTACADOS",
     "projects.viewProject": "Ver Proyecto",
