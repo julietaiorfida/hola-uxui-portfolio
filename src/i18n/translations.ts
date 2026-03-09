@@ -131,8 +131,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "services.s1.desc": "Intuitive, user-centered interfaces with interactive prototypes and scalable design systems.",
     "services.s2.title": "Web Design",
     "services.s2.desc": "Modern, responsive websites with solid visual identity, optimized for the best experience.",
-    "services.s3.title": "Landing Page",
-    "services.s3.desc": "Attractive and effective landing pages designed to convert visitors into clients.",
+    "services.s3.title": "Product Design",
+    "services.s3.desc": "End-to-end digital product design: research, wireframes, prototypes, and final UI.",
 
     // Projects
     "projects.title": "MY FEATURED PROJECTS",
