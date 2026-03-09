@@ -8,6 +8,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // Nav
     "nav.about": "SOBRE MÍ",
+    "nav.services": "SERVICIOS",
     "nav.projects": "PROYECTOS",
     "nav.experience": "EXPERIENCIA",
     "nav.contact": "CONTACTO",
