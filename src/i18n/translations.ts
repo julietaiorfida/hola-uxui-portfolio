@@ -123,6 +123,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.p3": "I'm very creative, curious, and detail-oriented. I love imagining, experimenting, and I don't stop until I find solutions that truly work.",
     "about.p4": "For me, designing is not just solving problems: it's making ideas feel, be understood, and be enjoyed.",
 
+    // Services
+    "services.title": "MY SERVICES",
+    "services.s1.title": "UI/UX Design",
+    "services.s1.desc": "Intuitive, user-centered interfaces with interactive prototypes and scalable design systems.",
+    "services.s2.title": "Web Design",
+    "services.s2.desc": "Modern, responsive websites with solid visual identity, optimized for the best experience.",
+    "services.s3.title": "Landing Page",
+    "services.s3.desc": "Attractive and effective landing pages designed to convert visitors into clients.",
+
     // Projects
     "projects.title": "MY FEATURED PROJECTS",
     "projects.viewProject": "View Project",
