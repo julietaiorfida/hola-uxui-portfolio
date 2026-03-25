@@ -104,7 +104,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "contact.send": "Enviar Mensaje",
 
     // Footer
-    "footer.text": "© 2024 Maria Julieta Iorfida - Diseñado con ❤️",
+    "footer.text": "© 2026 Maria Julieta Iorfida",
   },
   en: {
     // Hero
@@ -209,6 +209,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     "contact.send": "Send Message",
 
     // Footer
-    "footer.text": "© 2024 Maria Julieta Iorfida - Designed with ❤️",
+    "footer.text": "© 2026 Maria Julieta Iorfida",
   },
 };
