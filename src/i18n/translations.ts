@@ -80,7 +80,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "exp.cert2.date": "Agosto 2023",
     "exp.volTitle": "Voluntariado",
     "exp.vol.org": "Fundación Misión Marianista",
-    "exp.vol.period": "Marzo 2022 - Actualidad",
+    "exp.vol.period": "Marzo 2022 - Diciembre 2025",
     "exp.vol.desc": "Apoyo escolar en Colegio de Fátima, Villa Soldati. Acompañamiento académico en matemática, lengua e inglés, generando espacios de confianza y fomentando valores de compañerismo y empatía.",
 
     // Tools flip cards
@@ -185,7 +185,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "exp.cert2.date": "August 2023",
     "exp.volTitle": "Volunteering",
     "exp.vol.org": "Fundación Misión Marianista",
-    "exp.vol.period": "March 2022 - Present",
+    "exp.vol.period": "March 2022 - December 2025",
     "exp.vol.desc": "School tutoring at Colegio de Fátima, Villa Soldati. Academic support in math, Spanish, and English, creating spaces of trust and fostering fellowship and empathy values.",
 
     // Tools flip cards
