@@ -14,10 +14,10 @@ const Index = () => {
     <div className="relative">
       <Navigation />
       <Hero />
-      <About />
       <Services />
       <Projects />
       <Experience />
+      <About />
       <Contact />
       
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
