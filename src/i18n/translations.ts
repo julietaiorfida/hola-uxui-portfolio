@@ -22,7 +22,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // Services
     "services.title": "MIS SERVICIOS",
-    "services.s1.title": "UI Design",
+    "services.s1.title": "UX/UI Design",
     "services.s1.desc": "Diseño de interfaces claras y consistentes, con foco en jerarquía visual, componentes y sistemas escalables para productos digitales.",
     "services.s2.title": "Diseño Web",
     "services.s2.desc": "Desarrollo de sitios web modernos y responsive, pensados para comunicar con claridad, reforzar la identidad visual y optimizar la navegación.",
@@ -127,7 +127,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // Services
     "services.title": "MY SERVICES",
-    "services.s1.title": "UI Design",
+    "services.s1.title": "UX/UI Design",
     "services.s1.desc": "Clear and consistent interface design, focused on visual hierarchy, components, and scalable systems for digital products.",
     "services.s2.title": "Web Design",
     "services.s2.desc": "Development of modern, responsive websites designed to communicate clearly, reinforce visual identity, and optimize navigation.",
