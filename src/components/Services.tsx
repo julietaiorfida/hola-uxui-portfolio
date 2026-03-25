@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/useReveal";
 import serviceUiux from "@/assets/service-uiux.jpg";
@@ -82,18 +82,6 @@ const Services = () => {
                 />
               </div>
 
-              {/* Arrow button */}
-              <div className="absolute bottom-6 right-6 z-10">
-                <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110 ${
-                    service.accent
-                      ? "bg-primary-foreground text-primary"
-                      : "bg-primary text-primary-foreground"
-                  }`}
-                >
-                  <ArrowUpRight className="h-5 w-5" />
-                </div>
-              </div>
             </div>
           ))}
         </div>
