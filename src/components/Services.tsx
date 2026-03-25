@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/useReveal";
 import serviceUiux from "@/assets/service-uiux.jpg";
