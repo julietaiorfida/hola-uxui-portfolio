@@ -7,13 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import julietaPhoto from "@/assets/julieta-sin-fondo.png";
-import characterPhoto from "@/assets/character-julieta-final-no-bg.png";
-import julietaThumbsUp from "@/assets/julieta-thumbs-up.png";
-import julietaPhone from "@/assets/julieta-phone.png";
-import julietaDrawing from "@/assets/julieta-drawing.png";
-import julietaLaptop from "@/assets/julieta-laptop.png";
-import julietaTeam from "@/assets/julieta-team.png";
 
 
 const About = () => {
@@ -22,15 +15,7 @@ const About = () => {
   const titleRef = useReveal({ variant: 'up', delay: 100 });
   const textRef = useReveal({ variant: 'right', delay: 200 });
 
-  const images = [
-    { src: julietaPhoto, alt: "Julieta" },
-    { src: characterPhoto, alt: "Character Julieta" },
-    { src: julietaThumbsUp, alt: "Julieta con actitud positiva" },
-    { src: julietaPhone, alt: "Julieta en llamada" },
-    { src: julietaDrawing, alt: "Julieta diseñando" },
-    { src: julietaLaptop, alt: "Julieta trabajando" },
-    { src: julietaTeam, alt: "Julieta colaborando" },
-  ];
+  const images: { src: string; alt: string }[] = [];
 
   return (
     <section id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
