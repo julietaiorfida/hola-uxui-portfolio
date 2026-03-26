@@ -27,7 +27,7 @@ const Projects = () => {
       titleKey: "projects.p3.title",
       descKey: "projects.p3.desc",
       catKey: "projects.p3.cat",
-      color: "bg-accent",
+      color: "bg-primary",
       href: "https://www.behance.net/gallery/232999069/Diseno-de-feed",
     },
   ];
