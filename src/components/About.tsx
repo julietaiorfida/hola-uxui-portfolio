@@ -33,7 +33,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen py-20 px-6 bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden">
+    <section id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div ref={imageRef} className="relative">

@@ -10,7 +10,7 @@ const Contact = () => {
   const buttonsRef = useReveal({ variant: 'scale', stagger: true, staggerDelay: 100, delay: 300 });
 
   return (
-    <section id="contact" className="min-h-screen py-20 px-6 flex items-center bg-gradient-to-b from-secondary/10 via-background to-accent/5 relative overflow-hidden">
+    <section id="contact" className="min-h-screen py-24 px-6 flex items-center bg-gradient-to-b from-[hsl(var(--section-rosa-light))] to-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full">
         <div ref={titleRef}>
           <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center">
