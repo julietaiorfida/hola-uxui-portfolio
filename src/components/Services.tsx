@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 px-6 bg-gradient-to-b from-accent/5 via-background to-secondary/10 relative overflow-hidden"
+      className="py-24 px-6 bg-[hsl(var(--section-rosa-light))] border-t border-border/30 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <div ref={titleRef} className="mb-16">

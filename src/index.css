@@ -44,6 +44,10 @@ All colors MUST be HSL.
 
     --gradient-primary: linear-gradient(135deg, hsl(340 85% 60%), hsl(180 65% 55%));
     --gradient-soft: linear-gradient(180deg, hsl(25 100% 97%), hsl(340 90% 95%));
+
+    --section-white: 0 0% 100%;
+    --section-rosa-light: 350 40% 93%;
+    --section-rosa-mid: 348 30% 91%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }

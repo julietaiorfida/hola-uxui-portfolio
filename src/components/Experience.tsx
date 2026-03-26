@@ -33,7 +33,7 @@ const Experience = () => {
   const skillsCol2 = ["exp.skill6", "exp.skill7", "exp.skill8", "exp.skill9", "exp.skill10"];
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-6 bg-gradient-to-b from-primary/5 via-background to-secondary/10 relative overflow-hidden">
+    <section id="experience" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-rosa-mid))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div ref={titleRef}>
           <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
