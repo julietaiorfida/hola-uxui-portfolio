@@ -43,15 +43,15 @@ const Navigation = () => {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </Button>
 
-      <nav className="hidden md:flex fixed top-6 right-6 z-40 flex-row gap-2">
+      <nav className={`hidden md:flex fixed top-4 right-6 z-40 bg-background/80 backdrop-blur-md rounded-full px-2 py-2 gap-1.5 shadow-lg border border-border/20 transition-opacity duration-300 ${
+        isScrolled ? 'opacity-30 hover:opacity-100' : 'opacity-100'
+      }`}>
         {navItems.map((item) => (
           <Button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
             size="sm"
-            className={`rounded-full px-4 py-2 text-xs font-bold shadow-lg hover:scale-105 transition-all hover:shadow-primary/50 ${
-              isScrolled ? 'opacity-30 hover:opacity-100' : 'opacity-100'
-            }`}
+            className="rounded-full px-5 py-2 text-xs font-bold shadow-none hover:scale-105 transition-all hover:shadow-primary/50"
           >
             {t(item.labelKey)}
           </Button>
