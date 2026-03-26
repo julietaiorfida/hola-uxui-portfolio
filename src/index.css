@@ -17,10 +17,10 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 340 80% 30%;
 
-    --primary: 340 85% 60%;
+    --primary: 355 33% 67%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 340 90% 75%;
-    --primary-dark: 340 90% 45%;
+    --primary-light: 355 38% 78%;
+    --primary-dark: 354 28% 61%;
 
     --secondary: 180 70% 50%;
     --secondary-foreground: 0 0% 100%;
@@ -38,11 +38,11 @@ All colors MUST be HSL.
 
     --border: 340 30% 90%;
     --input: 340 30% 90%;
-    --ring: 340 85% 60%;
+    --ring: 355 33% 67%;
 
     --radius: 1.5rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(340 85% 60%), hsl(180 65% 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(355 33% 67%), hsl(180 65% 55%));
     --gradient-soft: linear-gradient(180deg, hsl(25 100% 97%), hsl(340 90% 95%));
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,7 +58,7 @@ All colors MUST be HSL.
     --popover: 340 40% 15%;
     --popover-foreground: 340 100% 95%;
 
-    --primary: 340 100% 65%;
+    --primary: 355 38% 72%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 340 40% 25%;
@@ -67,7 +67,7 @@ All colors MUST be HSL.
     --muted: 340 30% 20%;
     --muted-foreground: 340 50% 70%;
 
-    --accent: 340 100% 60%;
+    --accent: 355 33% 67%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50.6%;
@@ -75,7 +75,7 @@ All colors MUST be HSL.
 
     --border: 340 30% 25%;
     --input: 340 30% 25%;
-    --ring: 340 100% 65%;
+    --ring: 355 38% 72%;
   }
 }
 
@@ -207,14 +207,14 @@ All colors MUST be HSL.
   }
   .btn-interactive:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px hsl(340 85% 60% / 0.18);
+    box-shadow: 0 4px 14px hsl(355 33% 67% / 0.18);
   }
   .btn-interactive:active {
     transform: translateY(0);
-    box-shadow: 0 2px 6px hsl(340 85% 60% / 0.10);
+    box-shadow: 0 2px 6px hsl(355 33% 67% / 0.10);
   }
   .btn-interactive:focus-visible {
-    outline: 2px solid hsl(340 85% 60%);
+    outline: 2px solid hsl(355 33% 67%);
     outline-offset: 2px;
   }
 
@@ -254,7 +254,7 @@ All colors MUST be HSL.
   .flip-card:hover,
   .flip-card:focus-visible {
     transform: translateY(-2px);
-    filter: drop-shadow(0 6px 12px hsl(340 85% 60% / 0.15));
+    filter: drop-shadow(0 6px 12px hsl(355 33% 67% / 0.15));
     transition: transform 300ms ease, filter 300ms ease;
   }
 
