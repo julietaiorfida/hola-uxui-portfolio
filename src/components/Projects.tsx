@@ -20,9 +20,8 @@ const Projects = () => {
       titleKey: "projects.p2.title",
       descKey: "projects.p2.desc",
       catKey: "projects.p2.cat",
-      color: "bg-[hsl(65,85%,60%)]",
-      // TODO: agregar link Behance de Havanna
-      href: "",
+      color: "bg-[hsl(340,45%,45%)]",
+      href: "https://www.behance.net/gallery/231372565/APP-MNBA",
     },
     {
       titleKey: "projects.p3.title",
