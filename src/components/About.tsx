@@ -17,6 +17,12 @@ import imgSculpture from "@/assets/about/paper-sculpture.jpeg";
 import imgWorkshop from "@/assets/about/workshop.jpeg";
 import imgCalligraphy from "@/assets/about/calligraphy.jpeg";
 import imgPhotography from "@/assets/about/photography.jpeg";
+import imgWineLabels from "@/assets/about/wine-labels.jpeg";
+import imgCanvasArt from "@/assets/about/canvas-art.jpeg";
+import imgIllustratorLettering from "@/assets/about/illustrator-lettering.jpeg";
+import imgStencilWords from "@/assets/about/stencil-words.jpeg";
+import imgCarpeDiem from "@/assets/about/carpe-diem.jpeg";
+import imgCalligraphySantiago from "@/assets/about/calligraphy-santiago.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
@@ -34,6 +40,12 @@ const About = () => {
     { src: imgWorkshop, alt: "Taller de diseño" },
     { src: imgCalligraphy, alt: "Caligrafía" },
     { src: imgPhotography, alt: "Sesión de fotografía" },
+    { src: imgWineLabels, alt: "Diseño de etiquetas de vino" },
+    { src: imgCanvasArt, alt: "Arte en canvas" },
+    { src: imgIllustratorLettering, alt: "Lettering en Illustrator" },
+    { src: imgStencilWords, alt: "Stencil de palabras" },
+    { src: imgCarpeDiem, alt: "Diseño editorial Carpe Diem" },
+    { src: imgCalligraphySantiago, alt: "Caligrafía artística" },
   ];
 
   return (
