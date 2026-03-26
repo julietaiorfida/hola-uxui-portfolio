@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import imgWireframes from "@/assets/about/wireframes.jpeg";
 import imgIllustrator from "@/assets/about/illustrator.jpeg";
