@@ -1,6 +1,6 @@
 import heroVideo from "@/assets/julieta-hero-video.mp4";
 import LanguageToggle from "@/components/LanguageToggle";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 
 const Hero = () => {
