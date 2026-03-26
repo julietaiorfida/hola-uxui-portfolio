@@ -8,6 +8,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import imgWireframes from "@/assets/about/wireframes.jpeg";
+import imgIllustrator from "@/assets/about/illustrator.jpeg";
+import imgTotebag from "@/assets/about/totebag.jpeg";
+import imgFigma from "@/assets/about/figma-work.jpeg";
+import imgAccordion from "@/assets/about/accordion-art.jpeg";
+import imgSculpture from "@/assets/about/paper-sculpture.jpeg";
+import imgWorkshop from "@/assets/about/workshop.jpeg";
+import imgCalligraphy from "@/assets/about/calligraphy.jpeg";
+import imgPhotography from "@/assets/about/photography.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
@@ -15,7 +24,17 @@ const About = () => {
   const titleRef = useReveal({ variant: 'up', delay: 100 });
   const textRef = useReveal({ variant: 'right', delay: 200 });
 
-  const images: { src: string; alt: string }[] = [];
+  const images = [
+    { src: imgWireframes, alt: "Wireframes de prototipos" },
+    { src: imgIllustrator, alt: "Diseño en Illustrator" },
+    { src: imgTotebag, alt: "Tote bag pintada a mano" },
+    { src: imgFigma, alt: "Trabajo en Figma" },
+    { src: imgAccordion, alt: "Arte en acordeón" },
+    { src: imgSculpture, alt: "Escultura de papel" },
+    { src: imgWorkshop, alt: "Taller de diseño" },
+    { src: imgCalligraphy, alt: "Caligrafía" },
+    { src: imgPhotography, alt: "Sesión de fotografía" },
+  ];
 
   return (
     <section id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
