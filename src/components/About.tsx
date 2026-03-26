@@ -1,12 +1,6 @@
 import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { useEffect, useRef, useState } from "react";
 
 import imgWireframes from "@/assets/about/wireframes.jpeg";
 import imgIllustrator from "@/assets/about/illustrator.jpeg";
@@ -29,6 +23,9 @@ const About = () => {
   const imageRef = useReveal({ variant: 'scale' });
   const titleRef = useReveal({ variant: 'up', delay: 100 });
   const textRef = useReveal({ variant: 'right', delay: 200 });
+  const sectionRef = useRef<HTMLElement>(null);
+  const [current, setCurrent] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   const images = [
     { src: imgWireframes, alt: "Wireframes de prototipos" },
@@ -48,25 +45,54 @@ const About = () => {
     { src: imgCalligraphySantiago, alt: "Caligrafía artística" },
   ];
 
+  // Detect when section is visible
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  // Auto-advance when visible
+  useEffect(() => {
+    if (!isVisible) return;
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isVisible, images.length]);
+
   return (
-    <section id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
+    <section ref={sectionRef} id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div ref={imageRef} className="relative">
-            <Carousel className="w-full">
-              <CarouselContent>
-                {images.map((img, i) => (
-                  <CarouselItem key={i}>
-                    <div className="aspect-square rounded-[3rem] overflow-hidden bg-background shadow-2xl">
-                      <img src={img.src} alt={img.alt} className="w-full h-full object-contain" />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
-            
+          <div ref={imageRef} className="relative max-w-sm mx-auto w-full">
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-background shadow-2xl relative">
+              {images.map((img, i) => (
+                <img
+                  key={i}
+                  src={img.src}
+                  alt={img.alt}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    i === current ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
+            {/* Dots */}
+            <div className="flex justify-center gap-1.5 mt-4">
+              {images.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    i === current ? "bg-primary w-6" : "bg-primary/30"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
 
           <div>
