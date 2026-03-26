@@ -35,14 +35,6 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="mt-8">
-              <Button size="lg" asChild className="rounded-full px-12 py-8 text-xl font-bold shadow-2xl btn-interactive hover:shadow-primary/50">
-                <a href="mailto:julietaiorfida@gmail.com">
-                  <Mail className="mr-3 h-6 w-6" />
-                  {t("contact.send")}
-                </a>
-              </Button>
-            </div>
           </div>
 
           <div ref={buttonsRef} className="flex justify-center gap-6 pt-8">
