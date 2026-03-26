@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import imgWireframes from "@/assets/about/wireframes.jpeg";
 import imgIllustrator from "@/assets/about/illustrator.jpeg";
@@ -69,7 +70,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div ref={imageRef} className="relative max-w-sm mx-auto w-full">
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-background shadow-2xl relative">
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-background shadow-2xl relative group">
               {images.map((img, i) => (
                 <img
                   key={i}
@@ -80,6 +81,18 @@ const About = () => {
                   }`}
                 />
               ))}
+              <button
+                onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm hover:bg-background/90 text-foreground rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={() => setCurrent((prev) => (prev + 1) % images.length)}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm hover:bg-background/90 text-foreground rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <ChevronRight size={20} />
+              </button>
             </div>
             {/* Dots */}
             <div className="flex justify-center gap-1.5 mt-4">
