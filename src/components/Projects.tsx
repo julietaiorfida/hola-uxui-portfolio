@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 
 const Projects = () => {

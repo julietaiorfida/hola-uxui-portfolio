@@ -1,5 +1,5 @@
 
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 import serviceUiux from "@/assets/service-uiux.jpg";
 import serviceWebdesign from "@/assets/service-webdesign.jpg";

@@ -1,4 +1,4 @@
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.png";

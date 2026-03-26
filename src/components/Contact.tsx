@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { useReveal } from "@/hooks/useReveal";
 
 const Contact = () => {
