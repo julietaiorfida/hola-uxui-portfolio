@@ -27,6 +27,7 @@ const Experience = () => {
   const experiences = [
     { roleKey: "exp.role1", companyKey: "exp.company1", periodKey: "exp.period1", descKey: "exp.desc1" },
     { roleKey: "exp.role2", companyKey: "exp.company2", periodKey: "exp.period2", descKey: "exp.desc2" },
+    { roleKey: "exp.role3", companyKey: "exp.company3", periodKey: "exp.period3", descKey: "exp.desc3" },
   ];
 
   const skillsCol1 = ["exp.skill1", "exp.skill2", "exp.skill3", "exp.skill4", "exp.skill5"];
