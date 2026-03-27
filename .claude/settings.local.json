@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(npm install:*)",
+      "Bash(npx vite:*)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(node server.js)",
+      "Bash(cmd.exe /c \"netstat -ano | findstr :3001\")",
+      "Bash(echo \"exit $?\")",
+      "Bash(cmd.exe /c \"taskkill /PID 28836 /F\")",
+      "Bash(cmd.exe /c \"wmic process where processid=28244 get commandline\")",
+      "Bash(node --env-file=../.env scripts/cleanupRecords.js)",
+      "Bash(npm run:*)",
+      "Bash(curl -s -X DELETE http://localhost:3001/api/records/14c44bf8-495f-429c-b61e-e483d5f8467b)",
+      "Bash(curl -s -X DELETE http://localhost:3001/api/records/b1ebc2ef-ae99-45ff-a73d-b19bc779d7f6)",
+      "Bash(curl -s -X DELETE http://localhost:3001/api/records/c036e275-822e-465e-a0c0-3e0294662879)",
+      "Bash(curl -s http://localhost:3001/api/records)",
+      "Bash(python -c \"import sys,json; records=json.load\\(sys.stdin\\); [print\\(r[''''id''''], r[''''location'''']\\) for r in records]\")"
+    ]
+  }
+}
