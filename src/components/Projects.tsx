@@ -36,7 +36,7 @@ const Projects = () => {
     <section id="projects" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div ref={titleRef}>
-          <h2 className="text-6xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-primary mb-16 text-center md:text-left">
             {t("projects.title")}
           </h2>
         </div>

@@ -38,7 +38,7 @@ const Services = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div ref={titleRef} className="mb-16">
-          <h2 className="text-6xl md:text-7xl font-black text-primary text-center md:text-left">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-primary text-center md:text-left">
             {t("services.title")}
           </h2>
         </div>

@@ -110,7 +110,7 @@ const About = () => {
 
           <div>
             <div ref={titleRef}>
-              <h2 className="text-6xl md:text-7xl font-black text-primary mb-8">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-primary mb-8">
                 {t("about.title")}
               </h2>
             </div>
