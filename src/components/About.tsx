@@ -66,10 +66,10 @@ const About = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section ref={sectionRef} id="about" className="min-h-screen py-24 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
+    <section ref={sectionRef} id="about" className="py-12 px-6 bg-[hsl(var(--section-white))] border-t border-border/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div ref={imageRef} className="relative max-w-sm mx-auto w-full">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div ref={imageRef} className="relative max-w-xs mx-auto w-full">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-background shadow-2xl relative group">
               {images.map((img, i) => (
                 <img
@@ -110,11 +110,11 @@ const About = () => {
 
           <div>
             <div ref={titleRef}>
-              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-primary mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-5">
                 {t("about.title")}
               </h2>
             </div>
-            <div ref={textRef} className="space-y-4 text-lg text-foreground/80">
+            <div ref={textRef} className="space-y-3 text-sm text-foreground/80">
               <p>{t("about.p1")}</p>
               <p>{t("about.p2")}</p>
               <p>{t("about.p3")}</p>
