@@ -125,6 +125,16 @@ const Experience = () => {
                   <p className="text-sm text-foreground/80 mb-0.5">{t("exp.cert2.org")}</p>
                   <p className="text-xs text-muted-foreground">{t("exp.cert2.date")}</p>
                 </div>
+                <div>
+                  <p className="text-base font-semibold text-accent mb-0.5">{t("exp.cert3.name")}</p>
+                  <p className="text-sm text-foreground/80 mb-0.5">{t("exp.cert3.org")}</p>
+                  <p className="text-xs text-muted-foreground">{t("exp.cert3.date")}</p>
+                </div>
+                <div>
+                  <p className="text-base font-semibold text-accent mb-0.5">{t("exp.cert4.name")}</p>
+                  <p className="text-sm text-foreground/80 mb-0.5">{t("exp.cert4.org")}</p>
+                  <p className="text-xs text-muted-foreground">{t("exp.cert4.date")}</p>
+                </div>
               </div>
             </div>
 
