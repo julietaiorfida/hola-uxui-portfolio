@@ -98,7 +98,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "tool.html": "Estructura semántica y accesible.",
     "tool.css": "Estilos, responsive, animaciones y layouts.",
     "tool.chatgpt": "Ideación, variantes de copy UX y soporte para research.",
-    "tool.lovable": "Herramienta No-code para crear apps web y productos digitales con IA generativa.",
+    "tool.lovable": "Herramienta para crear apps web y productos digitales con IA generativa.",
     "tool.notion": "Documentación, briefs, research y organización del proyecto.",
 
     // Contact
@@ -207,7 +207,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "tool.html": "Semantic and accessible structure.",
     "tool.css": "Styles, responsive, animations, and layouts.",
     "tool.chatgpt": "Ideation, UX copy variants, and research support.",
-    "tool.lovable": "No-code tool to create web apps and digital products with generative AI.",
+    "tool.lovable": "Tool to create web apps and digital products with generative AI.",
     "tool.notion": "Documentation, briefs, research, and project organization.",
 
     // Contact
