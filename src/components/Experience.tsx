@@ -4,7 +4,7 @@ import figmaLogo from "@/assets/tools/figma.svg";
 import illustratorLogo from "@/assets/tools/illustrator.png";
 import photoshopLogo from "@/assets/tools/photoshop.png";
 import canvaLogo from "@/assets/tools/canva.svg";
-import afterEffectsLogo from "@/assets/tools/after-effects.png";
+import vscodeLogo from "@/assets/tools/vscode.png";
 import capcutLogo from "@/assets/tools/capcut.png";
 import claudeLogo from "@/assets/tools/claude.png";
 import htmlLogo from "@/assets/tools/html.png";
@@ -82,7 +82,7 @@ const Experience = () => {
                 <div data-reveal-item><ToolFlipCard logo={illustratorLogo} name="Illustrator" description={t("tool.illustrator")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={photoshopLogo} name="Photoshop" description={t("tool.photoshop")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={canvaLogo} name="Canva" description={t("tool.canva")} /></div>
-                <div data-reveal-item><ToolFlipCard logo={afterEffectsLogo} name="After Effects" description={t("tool.aftereffects")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={vscodeLogo} name="VS Code" description={t("tool.vscode")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={capcutLogo} name="CapCut" description={t("tool.capcut")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={claudeLogo} name="Claude" description={t("tool.claude")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={htmlLogo} name="HTML5" description={t("tool.html")} /></div>
