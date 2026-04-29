@@ -18,6 +18,8 @@ import imgIllustratorLettering from "@/assets/about/illustrator-lettering.jpeg";
 import imgStencilWords from "@/assets/about/stencil-words.jpeg";
 import imgCarpeDiem from "@/assets/about/carpe-diem.jpeg";
 import imgCalligraphySantiago from "@/assets/about/calligraphy-santiago.jpeg";
+import imgFigmaPrototype from "@/assets/about/figma-prototype.jpeg";
+import imgCodingCafe from "@/assets/about/coding-cafe.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
@@ -29,6 +31,8 @@ const About = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const images = [
+    { src: imgFigmaPrototype, alt: "Prototipo en Figma" },
+    { src: imgCodingCafe, alt: "Programando en café" },
     { src: imgWireframes, alt: "Wireframes de prototipos" },
     { src: imgIllustrator, alt: "Diseño en Illustrator" },
     { src: imgTotebag, alt: "Tote bag pintada a mano" },
