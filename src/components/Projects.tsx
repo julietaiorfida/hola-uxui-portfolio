@@ -10,25 +10,25 @@ const Projects = () => {
 
   const projects = [
     {
+      titleKey: "projects.p3.title",
+      descKey: "projects.p3.desc",
+      catKey: "projects.p3.cat",
+      color: "bg-primary",
+      href: "https://www.behance.net/gallery/248495487/Desarrollo-Web-de-Pasteleria",
+    },
+    {
       titleKey: "projects.p1.title",
       descKey: "projects.p1.desc",
       catKey: "projects.p1.cat",
-      color: "bg-primary",
+      color: "bg-secondary",
       href: "https://www.behance.net/gallery/231373469/Branding-de-vinos",
     },
     {
       titleKey: "projects.p2.title",
       descKey: "projects.p2.desc",
       catKey: "projects.p2.cat",
-      color: "bg-secondary",
-      href: "https://www.behance.net/gallery/231372565/APP-MNBA",
-    },
-    {
-      titleKey: "projects.p3.title",
-      descKey: "projects.p3.desc",
-      catKey: "projects.p3.cat",
       color: "bg-primary",
-      href: "https://www.behance.net/gallery/232999069/Diseno-de-feed",
+      href: "https://www.behance.net/gallery/231372565/APP-MNBA",
     },
   ];
 
