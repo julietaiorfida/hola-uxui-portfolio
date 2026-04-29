@@ -38,9 +38,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "projects.p2.title": "Rediseño UX/UI — App MNBA",
     "projects.p2.desc": "Rediseño de experiencia de usuario e interfaz para la app del Museo Nacional de Bellas Artes. Una aplicación inclusiva, moderna y fácil de usar que mejora la experiencia de visita presencial y exploración remota.",
     "projects.p2.cat": "UX/UI Redesign",
-    "projects.p3.title": "Diseño de feed — Alquiler temporario",
-    "projects.p3.desc": "Diseño de feed para alquiler temporario tipo Airbnb: grilla visual, estética de marca y piezas consistentes para publicaciones.",
-    "projects.p3.cat": "Social Media / Feed",
+    "projects.p3.title": "Desarrollo Web — Pastelería",
+    "projects.p3.desc": "Desarrollo web para un emprendimiento de pastelería: diseño de identidad digital, interfaz cálida y navegación clara para mostrar productos y conectar con clientes.",
+    "projects.p3.cat": "Desarrollo Web",
 
     // Experience
     "exp.title": "EXPERIENCIA",
@@ -153,9 +153,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "projects.p2.title": "UX/UI Redesign — MNBA App",
     "projects.p2.desc": "UX and UI redesign for the National Museum of Fine Arts app. An inclusive, modern, and user-friendly application that enhances the in-person visit experience and remote exploration.",
     "projects.p2.cat": "UX/UI Redesign",
-    "projects.p3.title": "Feed Design — Short-term Rental",
-    "projects.p3.desc": "Feed design for Airbnb-style short-term rental: visual grid, brand aesthetics, and consistent pieces for posts.",
-    "projects.p3.cat": "Social Media / Feed",
+    "projects.p3.title": "Web Development — Pastry Shop",
+    "projects.p3.desc": "Web development for a pastry business: digital identity design, warm interface, and clear navigation to showcase products and connect with customers.",
+    "projects.p3.cat": "Web Development",
 
     // Experience
     "exp.title": "EXPERIENCE",
