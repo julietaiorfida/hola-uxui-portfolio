@@ -81,6 +81,7 @@ const Experience = () => {
                 <div data-reveal-item><ToolFlipCard logo={figmaLogo} name="Figma" description={t("tool.figma")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={illustratorLogo} name="Illustrator" description={t("tool.illustrator")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={photoshopLogo} name="Photoshop" description={t("tool.photoshop")} /></div>
+                <div data-reveal-item><ToolFlipCard logo={afterEffectsLogo} name="After Effects" description={t("tool.aftereffects")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={canvaLogo} name="Canva" description={t("tool.canva")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={vscodeLogo} name="VS Code" description={t("tool.vscode")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={capcutLogo} name="CapCut" description={t("tool.capcut")} /></div>
