@@ -87,7 +87,6 @@ const Experience = () => {
                 <div data-reveal-item><ToolFlipCard logo={htmlLogo} name="HTML5" description={t("tool.html")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={cssLogo} name="CSS3" description={t("tool.css")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={chatgptLogo} name="ChatGPT" description={t("tool.chatgpt")} /></div>
-                <div data-reveal-item><ToolFlipCard logo={lovableLogo} name="Lovable" description={t("tool.lovable")} /></div>
                 <div data-reveal-item><ToolFlipCard logo={notionLogo} name="Notion" description={t("tool.notion")} /></div>
               </div>
             </div>
